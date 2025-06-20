@@ -1,0 +1,82 @@
+[
+  {
+    "title": "US Senate GENIUS Stablecoin Bill Final Vote Set for Tuesday",
+    "summary": "The US Senate is set for a final vote on the GENIUS Act next Tuesday, requiring stablecoins to be fully backed by USD or liquid assets with mandatory annual audits for issuers above $50B market cap. After Senate approval, the bill must be reconciled with the House's STABLE Act, addressing differences in state vs federal regulation and foreign issuer oversight.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "Ark Invest Sells $51.7M of Circle Shares at All-Time High",
+    "summary": "Ark Invest sold $51.7 million worth of Circle shares as the company hit an all-time high valuation. This significant divestment by a major institutional investor could signal profit-taking or portfolio rebalancing in the stablecoin sector.",
+    "categories": [
+      "funding"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "Tether Blocks $12.3M USDT Tied to Suspicious Tron Addresses",
+    "summary": "Tether has frozen $12.3 million in USDT linked to suspicious addresses on the Tron network. This action demonstrates Tether's ongoing compliance efforts and ability to freeze funds associated with potential illicit activities.",
+    "categories": [
+      "security"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "Founders Fund Invests in Ex-Citi Banker's Stablecoin Startup",
+    "summary": "Peter Thiel's Founders Fund has invested in a stablecoin startup founded by a former Citibank executive. This investment signals continued institutional interest in stablecoin infrastructure despite regulatory uncertainty.",
+    "categories": [
+      "funding"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "Coinbase and Gemini Near EU Crypto License Approvals Under MiCA",
+    "summary": "Major US exchanges Coinbase and Gemini are close to receiving crypto license approvals in the EU under the Markets in Crypto-Assets (MiCA) regulation. This would allow them to offer compliant stablecoin services across European markets.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "Palmer Luckey Plans Crypto-Friendly Bank Called Erebor",
+    "summary": "Oculus founder Palmer Luckey aims to revive tech banking with a new crypto and stablecoin-friendly bank called Erebor. This initiative could provide crucial banking infrastructure for crypto companies struggling with traditional banking relationships.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "Contango Offers Up to 29.47% APY on Leveraged USDC Strategies",
+    "summary": "Contango enables users to leverage various collateral types including PT-syrupUSDC and slvlUSD, borrowing USDC up to 9.27x to maximize yields between 8.27% to 29.47%. The platform offers additional Contango Points and Lent Points multipliers for users.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  },
+  {
+    "title": "YieldFi yUSD Offers 11.74% APY with Multi-Protocol Points",
+    "summary": "YieldFi's yUSD token provides 11.74% APY by allowing users to deposit various stablecoins and Pendle's PT tokens. Users earn additional points from TAC, Sonic, Napier, and Resolv protocols with 0% minting and redemption fees.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:43:01 +0900"
+  }
+]

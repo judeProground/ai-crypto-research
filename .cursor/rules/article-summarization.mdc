@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+- **Article Structure and Processing**
+    - All processed data must conform to the `articleSchema` defined in `[src/schema.js](mdc:src/schema.js)`.
+    - The processing logic must account for a single email newsletter containing multiple distinct articles or topics. Each topic should be parsed and processed into a separate article object.
+
+- **LLM-Powered Analysis Requirements**
+    - **Persona**: The AI prompt should instruct the model to act as a *Principal Security Researcher* or a senior expert in the relevant crypto field.
+    - **Summarization**:
+        - Summaries must be expert-level, providing specific details and context, not just generic statements.
+        - The summary must remain concise and **no more than 2-3 lines long**.
+    - **Categorization**:
+        - A single `categories` array must be used for classification.
+        - The LLM should be prompted to select categories from the core list below. It may suggest new, relevant, lowercase categories if the content does not fit well.
+        - **Core Categories**: `defi`, `security`, `regulation`, `wallet`, `funding`, `meme`
+    - **Importance Level**:
+        - The `importance` field must be assigned based on the following explicit criteria:
+            - **`fatal`**: A critical, widespread vulnerability, a major protocol hack with significant fund loss (> $10M), or a major exchange insolvency.
+            - **`high`**: A significant new vulnerability, a notable protocol hack (< $10M), major regulatory action, or a new, widespread scam.
+            - **`medium`**: A new research paper, a significant project launch or funding round, or a notable legal development.
+            - **`low`**: General news, market analysis, opinion pieces, or minor project updates.
+
+- **Example of a Correctly Formatted Article Object**
+    ```javascript
+    // ✅ DO: Follow this structure
+    const exampleArticle = {
+      source: 'example@newsletter.com',
+      title: 'Major DeFi Protocol Hacked',
+      summary: 'A critical re-entrancy vulnerability was exploited in the popular "LendFlow" protocol\'s withdrawal function, resulting in a loss of over $50 million in ETH and USDC. The team has paused all contracts and is working with security firms to trace the funds.',
+      categories: ['defi', 'security'],
+      importance: 'fatal',
+      timestamp: '2023-10-27T10:00:00.000Z',
+      originalContent: '<p>Full original HTML or text content...</p>'
+    };
+    ```

@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Coinbase Pursues SEC Approval for Tokenized Stock Trading",
+    "summary": "Coinbase is seeking regulatory approval from the SEC to offer tokenized stocks to US customers, aiming to compete with platforms like Robinhood and Charles Schwab. Chief Legal Officer Paul Grewal confirmed the exchange is pursuing either a no-action letter or exemptive relief for blockchain-based trading of traditional equities with 24/7 trading and reduced costs.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:41:38 +0900"
+  },
+  {
+    "title": "MEV Bots Identified as Primary Obstacle to Blockchain Scalability",
+    "summary": "Flashbots reports that MEV bots now consume 50%+ of gas on major rollups and ~40% of blockspace on Solana while paying less than 10% of total fees. On Base, just two bots generated 80% of spam traffic, suggesting the problem is economic congestion rather than technical capacity limitations.",
+    "categories": [
+      "defi",
+      "security"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:41:38 +0900"
+  },
+  {
+    "title": "Byreal Launches as Bybit-Incubated Hybrid Liquidity Network on Solana",
+    "summary": "Byreal, a new onchain liquidity network incubated by Bybit, has officially launched on Solana, aiming to merge CEX liquidity with DEX transparency. The platform features CLMM + RFQ hybrid routing, a fair launchpad called Reset Launch, and Revive Vault yield platform, with mainnet expected in Q3 2025.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:41:38 +0900"
+  },
+  {
+    "title": "Senate Passes Stablecoin Bill with Focus Shifting to House",
+    "summary": "The U.S. Senate has passed a stablecoin regulatory bill, now turning attention to the House of Representatives for further legislative action. TRM Labs reports that 99% of stablecoin activity in 2024 was 'licit', while China's Central Bank unveils an e-CNY center to boost global reach.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:41:38 +0900"
+  },
+  {
+    "title": "VanEck SOL ETF Listed by DTCC Amid Bitcoin ETF Inflow Streak",
+    "summary": "DTCC has listed VanEck's proposed spot Solana ETF application while Bitcoin ETFs logged $1.8B over a six-day inflow streak. This development follows Coinbase's broader strategy to expand beyond crypto, including recent partnerships with Shopify and Stripe.",
+    "categories": [
+      "regulation",
+      "funding"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:41:38 +0900"
+  },
+  {
+    "title": "JPMorgan to Launch 'Deposit Token' JPMD on Base Network",
+    "summary": "JPMorgan plans to launch a 'deposit token' called JPMD on the Base network in a pilot program involving Coinbase. This represents a significant move by traditional finance institutions into blockchain-based financial products and infrastructure.",
+    "categories": [
+      "defi",
+      "funding"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:41:38 +0900"
+  }
+]

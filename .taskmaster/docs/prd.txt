@@ -1,0 +1,56 @@
+# Project: Blockchain & Crypto Researching Bot
+
+## 1. Overview
+
+The project aims to build a bot that automates the process of researching blockchain and cryptocurrency information. It will crawl various sources like news, newsletters, and research articles, analyze them, and generate a summarized report with tags, categories, and importance levels.
+
+## 2. Goals
+
+-   Automate the collection of information from various sources.
+-   Analyze and summarize the collected data.
+-   Provide a structured and categorized final report.
+
+## 3. Features
+
+### 3.1. Data Crawling
+
+-   Crawl newsletters from a Gmail account using the Gmail API.
+-   (Future) Crawl news websites.
+-   (Future) Crawl Twitter feeds.
+-   (Future) Crawl research article websites.
+
+### 3.2. Data Processing and Analysis
+
+-   Summarize each crawled source.
+-   Analyze the content to extract key information.
+-   Assign tags and categories to each piece of information.
+-   Determine an importance level for each piece of information.
+
+### 3.3. Reporting
+
+-   Save individual analysis results in a structured format.
+-   Generate a final summary report from all the analyzed sources.
+
+## 4. Implementation Details
+
+### 4.1. Phase 1: Gmail Integration
+
+-   Set up a Node.js project.
+-   Integrate the Gmail API to fetch newsletters.
+-   Refer to the Google Gmail API quickstart for JavaScript: https://developers.google.com/workspace/gmail/api/quickstart/js?hl=ko
+
+### 4.2. Phase 2: Crawling and Parsing
+
+-   Develop crawlers for different data sources.
+-   Implement parsers to extract relevant content from crawled data.
+
+### 4.3. Phase 3: Analysis and Summarization
+
+-   Use a language model to summarize text.
+-   Implement a classification system for tagging and categorization.
+-   Develop a scoring mechanism for importance level.
+
+### 4.4. Phase 4: Reporting
+
+-   Design a schema for storing analyzed data.
+-   Implement a module to generate the final report. 

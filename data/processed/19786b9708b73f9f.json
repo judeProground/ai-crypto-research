@@ -1,0 +1,153 @@
+[
+  {
+    "title": "Zellic Cosmos SDK Auditing Course",
+    "summary": "Zellic's Lead Cosmos Security Researcher Faith created a comprehensive course covering the basics of auditing Cosmos, including message handlers, AnteHandlers, BeginBlockers/EndBlockers, and CLI interaction. The course provides practical guidance for security researchers working with Cosmos SDK applications.",
+    "categories": [
+      "security",
+      "education"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "BitoPro Exchange $11.5M Security Breach",
+    "summary": "Taiwanese cryptocurrency exchange BitoPro suffered an $11.5 million hack during a wallet system upgrade and asset transfer operation. This incident represents a significant security failure in exchange infrastructure during routine maintenance operations.",
+    "categories": [
+      "security",
+      "exchange"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Cork Protocol $12M Exchange Rate Manipulation Exploit",
+    "summary": "Cork Protocol was exploited for approximately $12 million (3,761 wrapped staked Ether) through a sophisticated attack involving counterfeit contract deployment and manipulation of exchange rate calculations. The attacker exploited fallback mechanisms and unchecked token interactions to drain protocol funds.",
+    "categories": [
+      "defi",
+      "security"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Force Bridge Cross-Chain Protocol $3M+ Hack",
+    "summary": "Force Bridge, a cross-chain protocol on Nervos Network, lost over $3 million in various crypto assets including 257,000 USDT, 539 ETH, 898,300 USDC, 60,400 DAI, and 0.79 wrapped Bitcoin. This represents another significant vulnerability in cross-chain bridge infrastructure.",
+    "categories": [
+      "defi",
+      "security"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "WHLUSDC Stablecoin Bug Discovery Challenge",
+    "summary": "Zellic researchers successfully identified and proved a purposely introduced bug in WHLUSDC, a Hyperliquid-native stablecoin, following developer Chris Ling's challenge announcement. The discovery demonstrates Zellic's technical capabilities in smart contract vulnerability detection.",
+    "categories": [
+      "defi",
+      "security"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Bybit Implements Three-Pronged Security Revamp Following $1.4B Hack",
+    "summary": "Following a massive $1.4 billion security breach in February, cryptocurrency exchange Bybit announced comprehensive security improvements including targeted security audits, wallet fortifications, and information security enhancements. This represents one of the largest exchange security incidents in crypto history.",
+    "categories": [
+      "security",
+      "exchange"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Treasury Sanctions Philippine Tech Company for $200M Crypto Scams",
+    "summary": "The US Treasury's Office of Foreign Assets Control sanctioned Funnull Technology, a Philippine-based company, for facilitating cryptocurrency scams that defrauded Americans of over $200 million. This regulatory action demonstrates increasing government focus on international crypto fraud operations.",
+    "categories": [
+      "regulation",
+      "security"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "G7 Summit to Address North Korea's Crypto Theft Activities",
+    "summary": "Group of Seven leaders will potentially discuss North Korea's increasing involvement in cyberattacks and cryptocurrency theft at their upcoming summit in Canada. This highlights the geopolitical implications of state-sponsored crypto crime and its impact on global financial security.",
+    "categories": [
+      "regulation",
+      "security"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Hong Kong Passes Comprehensive Stablecoins Bill",
+    "summary": "Hong Kong passed the Stablecoins Bill on May 21, 2025, requiring stablecoin providers to obtain licensing from the Hong Kong Monetary Authority and comply with asset reserve management and client asset segregation requirements. This represents a significant regulatory milestone for stablecoin operations in Asia.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Digital Asset Market Clarity Act Introduced in US House",
+    "summary": "US lawmakers introduced the Digital Asset Market Clarity Act of 2025, proposing lighter regulations for decentralized blockchains and blockchain-based applications. The bill aims to provide regulatory clarity while recognizing the unique characteristics of truly decentralized systems.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "FBI and Dutch Police Shut Down Criminal Botnet Services",
+    "summary": "Operation Moonlander, a joint FBI-Dutch Police action, successfully shut down Anyproxy and 5Socks, two services providing botnets of hacked internet-connected devices to cybercriminals. This demonstrates international law enforcement cooperation in combating crypto-related cybercrime infrastructure.",
+    "categories": [
+      "security"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Telegram Closes $35B Cybercriminal Marketplace Channels",
+    "summary": "Telegram shut down thousands of channels belonging to Xinbi Guarantee and Huione Guarantee, Southeast Asian cybercriminal marketplaces with 230,000 users that facilitated over $35 billion in USDT transactions. This action represents a significant blow to crypto-based criminal infrastructure.",
+    "categories": [
+      "security"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "FBI Warns of NFT Airdrop Scams on Hedera Hashgraph",
+    "summary": "The FBI issued a warning about a new scam exploiting NFT airdrops on the Hedera Hashgraph network to steal cryptocurrency from victim wallets. This represents an emerging attack vector targeting users through seemingly legitimate NFT distributions.",
+    "categories": [
+      "security",
+      "wallet"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "XRPL SDK Compromised with Private Key Stealing Backdoor",
+    "summary": "Aikido Security detected a compromised version of the xrpl package, the official SDK for the XRP ledger, containing a backdoor designed to steal cryptocurrency private keys. This supply chain attack demonstrates the critical importance of package security in blockchain development.",
+    "categories": [
+      "security",
+      "wallet"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  }
+]

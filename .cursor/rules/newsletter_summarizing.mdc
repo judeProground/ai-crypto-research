@@ -1,0 +1,11 @@
+---
+description: Comprehensive reference for Taskmaster MCP tools and CLI commands.
+globs: **/*
+alwaysApply: true
+---
+# format 
+- title 
+- summarize - 2-3 lines
+- category 
+- main categories: defi, security, regulation, wallet, funding, meme, 
+- importance level: fatal, low, mediem, high 

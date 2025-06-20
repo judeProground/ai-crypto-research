@@ -1,0 +1,158 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Setup Project Repository and Initial Node.js Environment",
+        "description": "Initialize a Node.js project repository with version control and basic project structure.",
+        "details": "Create a new directory for the project. Initialize a Node.js project using `npm init`. Set up a `.gitignore` file to exclude node_modules and sensitive files. Install TypeScript (latest stable version) for type safety and better maintainability. Use `ts-node` for development. Recommended: Node.js v18+, TypeScript 5.x, ts-node 10.x.",
+        "testStrategy": "Verify project initialization by running `npm init` and checking for `package.json`. Confirm TypeScript setup with `tsc --version` and `ts-node --version`.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Configure Gmail API Authentication and Authorization",
+        "description": "Set up OAuth 2.0 authentication for Gmail API access.",
+        "details": "Create a Google Cloud project and enable the Gmail API. Generate OAuth 2.0 credentials (client ID and secret). Store credentials securely using environment variables. Use the official `googleapis` library (v120+). Implement a basic authentication flow following Google’s quickstart guide for Node.js.",
+        "testStrategy": "Test authentication by fetching a list of emails from the Gmail API. Ensure credentials are not hardcoded and environment variables are loaded correctly.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Implement Gmail Newsletter Crawler",
+        "description": "Develop a module to fetch newsletters from a Gmail account using the Gmail API.",
+        "details": "Use the `googleapis` library to fetch emails labeled as newsletters. Parse email metadata (subject, sender, date). Extract email body content. Filter and store only relevant newsletters. Use async/await for API calls. Store raw data in a temporary JSON file for debugging.",
+        "testStrategy": "Test by fetching a sample of newsletters and verifying correct extraction of subject, sender, and body content. Check for proper error handling.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Design Data Storage Schema for Analyzed Content",
+        "description": "Define a structured schema for storing analyzed and summarized content.",
+        "details": "Design a JSON schema for storing analyzed data. Include fields: source, title, summary, tags, categories, importance level, and timestamp. Use TypeScript interfaces for type safety. Consider future extensibility for additional sources.",
+        "testStrategy": "Validate schema by creating sample data and ensuring all required fields are present and correctly typed.",
+        "priority": "medium",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Implement Content Summarization Using LLM",
+        "description": "Integrate a language model to summarize crawled content.",
+        "details": "Use OpenAI’s GPT-4 API or a local LLM (e.g., Llama 3, Mistral) for summarization. For cloud-based, use the official `openai` npm package (v4+). For local, use `llama-node` or similar. Pass email body content to the model and store the summary. Handle API rate limits and errors gracefully.",
+        "testStrategy": "Test summarization by passing sample content and verifying the output is coherent and concise. Check error handling for API limits and network issues.",
+        "priority": "medium",
+        "dependencies": [
+          3,
+          4
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Develop Tagging and Categorization Module",
+        "description": "Implement a system to assign tags and categories to summarized content.",
+        "details": "Use a pre-trained NLP model (e.g., Hugging Face’s Transformers, `@huggingface/inference` npm package) for topic extraction. Define a set of predefined tags and categories relevant to blockchain/crypto. Assign tags and categories based on model output. Store results in the designed schema.",
+        "testStrategy": "Test by processing sample summaries and verifying correct assignment of tags and categories. Check for edge cases and ambiguous content.",
+        "priority": "medium",
+        "dependencies": [
+          4,
+          5
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Implement Importance Scoring Mechanism",
+        "description": "Develop a module to assign an importance level to each analyzed piece of content.",
+        "details": "Define criteria for importance (e.g., source credibility, keyword frequency, sentiment). Implement a scoring algorithm (e.g., weighted sum of factors). Store the score in the data schema. Use simple heuristics initially; consider machine learning for future iterations.",
+        "testStrategy": "Test by scoring sample content and verifying the output aligns with defined criteria. Check for consistency and edge cases.",
+        "priority": "medium",
+        "dependencies": [
+          4,
+          6
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Build Reporting Module for Final Summary",
+        "description": "Develop a module to generate a structured final report from all analyzed sources.",
+        "details": "Aggregate all analyzed data. Generate a report in JSON format (or Markdown/PDF if required). Include sections for each category, sorted by importance. Use a templating engine (e.g., `handlebars` or `ejs`) for flexible output. Store the report for later retrieval.",
+        "testStrategy": "Test by generating a report from sample data and verifying correct aggregation, sorting, and formatting. Check for missing or malformed data.",
+        "priority": "medium",
+        "dependencies": [
+          4,
+          7
+        ],
+        "status": "in-progress",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Implement Error Handling and Logging",
+        "description": "Add robust error handling and logging throughout the application.",
+        "details": "Use `winston` or `pino` for logging. Log errors, warnings, and important events. Implement try-catch blocks for critical operations. Store logs in files or a centralized service. Ensure sensitive data is not logged.",
+        "testStrategy": "Test by intentionally causing errors (e.g., invalid API keys, network failures) and verifying logs capture the issues. Check for sensitive data leakage.",
+        "priority": "low",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Documentation and Deployment Preparation",
+        "description": "Prepare project documentation and deployment scripts.",
+        "details": "Write a README with setup, usage, and configuration instructions. Create deployment scripts (e.g., Dockerfile, `npm run` scripts). Document environment variables and secrets management. Include a sample report and test data.",
+        "testStrategy": "Test by following the documentation to set up and run the project. Verify deployment scripts work as expected.",
+        "priority": "low",
+        "dependencies": [
+          1,
+          9
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 11,
+        "title": "Implement LLM-Based Email Body Topic Segmentation",
+        "description": "Develop a mechanism to parse an email body and identify multiple distinct articles or topics, processing each as a separate item using an LLM.",
+        "details": "Leverage a large language model (LLM) to semantically segment email bodies into distinct topics or articles. Implement a pipeline that first breaks the email body into sentences, then uses semantic chunking techniques—such as generating embeddings for sentence groups and measuring semantic distance between them—to detect topic boundaries. Utilize existing libraries (e.g., LangChain's semantic chunking splitter) or custom logic based on sentence embeddings to delineate segments. For each identified segment, create a separate content item for downstream processing. Ensure the mechanism is robust to varied email formats and can handle edge cases like overlapping topics or ambiguous boundaries. Integrate error handling for LLM API calls and provide configuration options for chunking sensitivity.",
+        "testStrategy": "Prepare a diverse set of sample email bodies containing multiple articles or topics. Run the segmentation mechanism and verify that each distinct topic is correctly identified and separated. Manually review the output to ensure segments align with logical topic boundaries. Test with emails containing single topics to confirm no false splits occur. Validate error handling by simulating LLM/API failures and malformed input. Confirm that each segment is processed as an independent item in the pipeline.",
+        "status": "done",
+        "dependencies": [
+          3,
+          5
+        ],
+        "priority": "high",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-06-19T05:38:37.297Z",
+      "updated": "2025-06-19T06:36:32.307Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Zellic Cosmos SDK Auditing Course",
+    "summary": "Zellic's Lead Cosmos Security Researcher Faith created a comprehensive video tutorial covering the basics of auditing Cosmos SDK, including message handlers, AnteHandlers, BeginBlockers/EndBlockers, and CLI interaction. The course uses specific Cosmos SDK and Gaia commits for reference and provides timestamps for easy navigation through topics.",
+    "categories": [
+      "security",
+      "education"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "BitoPro Exchange $11.5M Security Breach",
+    "summary": "Taiwanese cryptocurrency exchange BitoPro suffered an $11.5 million hack during a wallet system upgrade and asset transfer operation. The incident represents a significant security failure in exchange infrastructure during maintenance operations.",
+    "categories": [
+      "security",
+      "exchange"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Force Bridge Cross-Chain Protocol $3M+ Exploit",
+    "summary": "Force Bridge, a cross-chain protocol on Nervos Network, was exploited for over $3 million in various crypto assets including 257,000 USDT, 539 ETH, 898,300 USDC, 60,400 DAI, and 0.79 wrapped Bitcoin. The hack highlights vulnerabilities in cross-chain bridge implementations.",
+    "categories": [
+      "security",
+      "defi"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Cork Protocol $12M Exchange Rate Manipulation Attack",
+    "summary": "Cork Protocol was exploited for approximately $12 million (3,761 wrapped staked Ether) through a sophisticated attack involving counterfeit contract deployment and manipulation of exchange rate calculations. The attacker exploited fallback mechanisms and unchecked token interactions to execute the theft.",
+    "categories": [
+      "security",
+      "defi"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "FBI NFT Airdrop Scam Warning on Hedera Hashgraph",
+    "summary": "The FBI issued a warning about a new scam exploiting NFT airdrops on the Hedera Hashgraph network to steal cryptocurrency from user wallets. This represents an emerging attack vector targeting NFT holders through malicious airdrop mechanisms.",
+    "categories": [
+      "security",
+      "scam"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Bancor Files Patent Infringement Lawsuit Against Uniswap",
+    "summary": "Bancor has sued Uniswap Labs and the Uniswap Foundation for patent infringement, claiming unlawful use of its foundational decentralized exchange technology. This legal action could have significant implications for the DeFi ecosystem and DEX development.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Hong Kong Passes Comprehensive Stablecoins Bill",
+    "summary": "Hong Kong passed the Stablecoins Bill on May 21, 2025, requiring stablecoin providers to obtain licenses from the Hong Kong Monetary Authority and comply with requirements including proper asset reserve management and client asset segregation. This represents a significant regulatory development for the stablecoin sector.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Telegram Shuts Down Major Cybercriminal Marketplaces",
+    "summary": "Telegram closed thousands of channels belonging to Xinbi Guarantee and Huione Guarantee, two major cybercriminal marketplaces with 230,000 users that collectively engaged in over $35 billion in USDT transactions. This represents a significant enforcement action against crypto-enabled cybercrime.",
+    "categories": [
+      "security",
+      "regulation"
+    ],
+    "importance": "high",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Zellic Research: Enumerating All 69.7M Ethereum Contracts",
+    "summary": "Zellic published research detailing how they successfully retrieved and analyzed every single contract ever deployed on Ethereum, totaling 69,788,231 contracts. This comprehensive dataset provides valuable insights for security research and ecosystem analysis.",
+    "categories": [
+      "security",
+      "research"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  },
+  {
+    "title": "Ukrainian Hacker Arrested for $4.5M Crypto Mining Operation",
+    "summary": "Ukrainian police arrested a hacker who breached 5,000 accounts at an international hosting company to illegally mine cryptocurrency, resulting in $4.5 million in damages. The arrest demonstrates continued law enforcement action against crypto-related cybercrime.",
+    "categories": [
+      "security",
+      "crime"
+    ],
+    "importance": "medium",
+    "source": "Billy Shin <differ@proground.co.kr>",
+    "emailDate": "Thu, 19 Jun 2025 14:46:17 +0900"
+  }
+]
