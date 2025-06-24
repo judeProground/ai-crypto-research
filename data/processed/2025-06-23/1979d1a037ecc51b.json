@@ -1,0 +1,97 @@
+[
+  {
+    "title": "$1B Crypto Liquidated After Iran Strikes",
+    "summary": "US airstrikes on Iranian uranium facilities triggered over $1B in crypto liquidations within 24 hours, wiping out 172,000 traders. Ethereum led losses with $296M liquidated, while Bitcoin saw $152M, with most forced closures on Bybit and Binance as the total crypto market cap dropped 4.4% to $3.25T.",
+    "categories": [
+      "security",
+      "defi"
+    ],
+    "importance": "high",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Kraken Launches Native BTC Yield via Babylon",
+    "summary": "Kraken launched Bitcoin 'staking' using Babylon's time-lock protocol, offering up to 1% APR without wrapping or bridging. The service keeps BTC on its native blockchain while securing PoS chains, paying rewards in BABY tokens with a 7-day unbonding period.",
+    "categories": [
+      "defi",
+      "wallet"
+    ],
+    "importance": "medium",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "ETH ETFs See Largest Outflow in a Month",
+    "summary": "Spot Ethereum ETFs recorded over $11M in outflows on Friday, the highest since mid-May, led by a $19.7M exit from BlackRock's ETHA fund as ETH dropped below $2,400. Despite the dip, ETH ETFs maintained $840M in net monthly inflows while Bitcoin ETFs continued their 9-day inflow streak.",
+    "categories": [
+      "funding",
+      "defi"
+    ],
+    "importance": "medium",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Nakamoto and KindlyMD Boost BTC Treasury to $763M",
+    "summary": "Nakamoto and KindlyMD raised an additional $51.5M in PIPE funding, increasing their planned bitcoin treasury to $763M pending merger approval. The firms aim to convert all funds into BTC with 7,316 BTC already escrowed, joining 228 companies now holding corporate bitcoin treasuries.",
+    "categories": [
+      "funding"
+    ],
+    "importance": "medium",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Trezor Issues Phishing Alert After Support Abuse",
+    "summary": "Trezor issued a phishing alert after attackers abused their support contact system to target users. The hardware wallet manufacturer warned users about fraudulent communications attempting to steal credentials and funds.",
+    "categories": [
+      "security",
+      "wallet"
+    ],
+    "importance": "high",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Cointelegraph Website Hacked with Fake Airdrop Scam",
+    "summary": "Cointelegraph faced front-end exploits with attackers promoting fraudulent airdrops on their website. The security breach exposed visitors to phishing attempts through fake token distribution campaigns.",
+    "categories": [
+      "security"
+    ],
+    "importance": "high",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Self Chain CEO Ousted Over $50M OTC Fraud Allegations",
+    "summary": "Self Chain removed their CEO following allegations of involvement in a $50M cryptocurrency OTC fraud scheme. The governance action highlights ongoing risks in peer-to-peer crypto trading and executive misconduct in the blockchain space.",
+    "categories": [
+      "security"
+    ],
+    "importance": "high",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Texas Signs Strategic Bitcoin Reserve Bill Into Law",
+    "summary": "Texas Governor Greg Abbott signed a strategic Bitcoin reserve bill into law, making Texas the third US state to create official BTC reserves. The legislation signals growing state-level adoption of cryptocurrency as a treasury asset.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Coinbase Secures EU-Wide MiCA License",
+    "summary": "Coinbase obtained EU-wide crypto services approval under MiCA regulations, allowing comprehensive operations across European markets. The license positions Coinbase as a compliant operator in one of the world's largest regulatory frameworks.",
+    "categories": [
+      "regulation",
+      "wallet"
+    ],
+    "importance": "medium",
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  }
+]

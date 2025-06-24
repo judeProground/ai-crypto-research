@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { generateReport } from "./llm.js";
-import { WebClient } from "@slack/web-api";
+import { sendSlackReport } from "./slack.js";
 import "dotenv/config";
 
 const PROCESSED_DIR = path.join(process.cwd(), "data/processed");
@@ -34,35 +34,13 @@ async function getAllAnalyzedArticles() {
   return allArticles;
 }
 
-async function sendReportToSlack(reportContent, reportPath) {
-  if (!process.env.SLACK_BOT_TOKEN || !process.env.SLACK_CHANNEL_ID) {
-    console.log("Slack credentials not found. Skipping sending report to Slack.");
-    return;
-  }
-
-  const slackClient = new WebClient(process.env.SLACK_BOT_TOKEN);
-  const today = new Date().toISOString().split("T")[0];
-
-  try {
-    await slackClient.files.uploadV2({
-      channel_id: process.env.SLACK_CHANNEL_ID,
-      initial_comment: `Crypto Security Report for ${today}`,
-      filename: path.basename(reportPath),
-      file: reportPath,
-    });
-    console.log("Successfully sent report to Slack.");
-  } catch (error) {
-    console.error("Error sending report to Slack:", error);
-  }
-}
-
-export async function runReporting() {
+export async function runReportGeneration() {
   console.log("\nStarting report generation...");
   const articles = await getAllAnalyzedArticles();
 
   if (articles.length === 0) {
     console.log("No analyzed articles found to report on.");
-    return;
+    return null;
   }
 
   console.log(`Found ${articles.length} articles. Generating summary...`);
@@ -75,6 +53,46 @@ export async function runReporting() {
   await fs.writeFile(reportPath, report);
 
   console.log(`Report successfully generated and saved to ${reportPath}`);
+  return reportPath;
+}
 
-  await sendReportToSlack(report, reportPath);
+export async function runSlackSending(reportPath = null) {
+  console.log("\nStarting Slack report sending...");
+
+  let reportContent;
+  if (reportPath) {
+    // Use provided report path
+    try {
+      reportContent = await fs.readFile(reportPath, "utf-8");
+      console.log(`Reading report from: ${reportPath}`);
+    } catch (error) {
+      console.error(`Failed to read report from ${reportPath}:`, error);
+      return;
+    }
+  } else {
+    // Use today's report
+    const today = new Date().toISOString().split("T")[0];
+    const defaultReportPath = path.join(process.cwd(), "data/reports", `report-${today}.md`);
+
+    try {
+      reportContent = await fs.readFile(defaultReportPath, "utf-8");
+      console.log(`Reading today's report from: ${defaultReportPath}`);
+    } catch (error) {
+      console.error(`Failed to read today's report from ${defaultReportPath}:`, error);
+      console.error("Please ensure a report has been generated first or provide a specific report path.");
+      return;
+    }
+  }
+
+  await sendSlackReport(reportContent);
+  console.log("Report successfully sent to Slack!");
+}
+
+export async function runReporting() {
+  console.log("\nStarting full reporting pipeline...");
+  const reportPath = await runReportGeneration();
+
+  if (reportPath) {
+    await runSlackSending(reportPath);
+  }
 }
