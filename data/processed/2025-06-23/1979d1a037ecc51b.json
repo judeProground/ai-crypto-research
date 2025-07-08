@@ -1,96 +1,127 @@
 [
   {
     "title": "$1B Crypto Liquidated After Iran Strikes",
-    "summary": "US airstrikes on Iranian uranium facilities triggered over $1B in crypto liquidations within 24 hours, wiping out 172,000 traders. Ethereum led losses with $296M liquidated, while Bitcoin saw $152M, with most forced closures on Bybit and Binance as the total crypto market cap dropped 4.4% to $3.25T.",
+    "summary": "US airstrikes on Iranian uranium sites triggered over $1B in crypto liquidations within 24 hours, wiping out 172,000 traders. Ethereum led losses with $296M liquidated while Bitcoin saw $152M, as the total crypto market cap dropped 4.4% to $3.25T amid heightened geopolitical tensions.",
     "categories": [
       "security",
       "defi"
     ],
     "importance": "high",
+    "primary_link": "https://www.theblock.co/post/359101/crypto-market-sees-over-1b-in-daily-liquidations-btc-drops-below-100k-following-u-s-strikes-on-iran",
+    "additional_links": [
+      "https://www.coindesk.com/markets/2025/06/22/bullish-crypto-bets-liquidated-for-595m-as-us-bombs-iran-nuclear-sites"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/77e812cb-9c78-4f33-a3ca-14da2f635ac0/Screen_Shot_2025-06-23_at_12.52.47.png?t=1750657973"
+    ],
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   },
   {
-    "title": "Kraken Launches Native BTC Yield via Babylon",
-    "summary": "Kraken launched Bitcoin 'staking' using Babylon's time-lock protocol, offering up to 1% APR without wrapping or bridging. The service keeps BTC on its native blockchain while securing PoS chains, paying rewards in BABY tokens with a 7-day unbonding period.",
+    "title": "Kraken's Native BTC Yield via Babylon",
+    "summary": "Kraken launched Bitcoin 'staking' using Babylon's time-lock protocol, offering up to 1% APR without wrapping or bridging. The service pays rewards in BABY tokens with a seven-day unbonding period, making Kraken the first major exchange to offer non-custodial BTC yield.",
     "categories": [
       "defi",
       "wallet"
     ],
     "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/358973/kraken-bitcoin-staking-babylon",
+    "additional_links": [
+      "https://bankroll.network/",
+      "https://bridge.alephium.org/",
+      "https://www.helixapp.com/",
+      "https://belt.fi/",
+      "https://nation.fun/"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a6d3e4cc-1fce-47be-a952-42555c113d55/BTCStaking_1535x700_2X-1.jpg?t=1750658480"
+    ],
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   },
   {
     "title": "ETH ETFs See Largest Outflow in a Month",
-    "summary": "Spot Ethereum ETFs recorded over $11M in outflows on Friday, the highest since mid-May, led by a $19.7M exit from BlackRock's ETHA fund as ETH dropped below $2,400. Despite the dip, ETH ETFs maintained $840M in net monthly inflows while Bitcoin ETFs continued their 9-day inflow streak.",
+    "summary": "Spot Ethereum ETFs recorded over $11M in outflows on Friday, the highest since mid-May, led by a $19.7M exit from BlackRock's ETHA fund as ETH dropped below $2,400. Despite the dip, ETH ETFs maintain $840M in net inflows this month while Bitcoin ETFs continue their 9-day inflow streak.",
     "categories": [
-      "funding",
       "defi"
     ],
     "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/359084/spot-ethereum-etfs-log-largest-outflows-in-one-month-as-eth-price-tumbles-below-2400",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/d4e0be14-f86c-4a8a-9da0-6a738d31ce3c/Screen_Shot_2025-06-23_at_13.07.06.png?t=1750658832"
+    ],
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   },
   {
-    "title": "Nakamoto and KindlyMD Boost BTC Treasury to $763M",
-    "summary": "Nakamoto and KindlyMD raised an additional $51.5M in PIPE funding, increasing their planned bitcoin treasury to $763M pending merger approval. The firms aim to convert all funds into BTC with 7,316 BTC already escrowed, joining 228 companies now holding corporate bitcoin treasuries.",
+    "title": "Nakamoto, KindlyMD Boost BTC Treasury to $763M",
+    "summary": "Nakamoto and KindlyMD raised an additional $51.5M in PIPE funding, increasing their planned Bitcoin treasury to $763M pending merger approval. The firms aim to convert all funds into BTC with 7,316 BTC already escrowed, joining 228 companies now holding corporate Bitcoin treasuries.",
     "categories": [
       "funding"
     ],
     "importance": "medium",
-    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
-    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
-  },
-  {
-    "title": "Trezor Issues Phishing Alert After Support Abuse",
-    "summary": "Trezor issued a phishing alert after attackers abused their support contact system to target users. The hardware wallet manufacturer warned users about fraudulent communications attempting to steal credentials and funds.",
-    "categories": [
-      "security",
-      "wallet"
+    "primary_link": "https://www.theblock.co/post/359020/david-baileys-nakamoto-and-kindlymd-raise-bitcoin-treasury-target-to-763-million-with-new-pipe-funding",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/acea3e23-9cdb-47be-a348-434146c86d45/Screen_Shot_2025-06-23_at_13.16.01.png?t=1750659365"
     ],
-    "importance": "high",
-    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
-    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
-  },
-  {
-    "title": "Cointelegraph Website Hacked with Fake Airdrop Scam",
-    "summary": "Cointelegraph faced front-end exploits with attackers promoting fraudulent airdrops on their website. The security breach exposed visitors to phishing attempts through fake token distribution campaigns.",
-    "categories": [
-      "security"
-    ],
-    "importance": "high",
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   },
   {
     "title": "Self Chain CEO Ousted Over $50M OTC Fraud Allegations",
-    "summary": "Self Chain removed their CEO following allegations of involvement in a $50M cryptocurrency OTC fraud scheme. The governance action highlights ongoing risks in peer-to-peer crypto trading and executive misconduct in the blockchain space.",
+    "summary": "Self Chain removed its CEO following allegations of involvement in a $50M crypto OTC fraud scheme. This represents a significant governance crisis and potential security breach affecting investor confidence in the protocol.",
     "categories": [
       "security"
     ],
     "importance": "high",
+    "primary_link": "https://www.theblock.co/post/359161/self-chain-ousts-ceo-after-allegations-of-involvement-in-50-million-crypto-otc-fraud",
+    "additional_links": [],
+    "images": [],
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   },
   {
     "title": "Texas Signs Strategic Bitcoin Reserve Bill Into Law",
-    "summary": "Texas Governor Greg Abbott signed a strategic Bitcoin reserve bill into law, making Texas the third US state to create official BTC reserves. The legislation signals growing state-level adoption of cryptocurrency as a treasury asset.",
+    "summary": "Texas Governor Greg Abbott signed a strategic Bitcoin reserve bill into law, joining two other states in establishing official BTC reserves. This represents significant regulatory progress for Bitcoin adoption at the state government level in the United States.",
     "categories": [
       "regulation"
     ],
     "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/359089/texas-governor-greg-abbott-signs-strategic-bitcoin-reserve-bill-into-law",
+    "additional_links": [
+      "https://decrypt.co/326427/texas-us-states-bitcoin-reserves"
+    ],
+    "images": [],
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   },
   {
-    "title": "Coinbase Secures EU-Wide MiCA License",
-    "summary": "Coinbase obtained EU-wide crypto services approval under MiCA regulations, allowing comprehensive operations across European markets. The license positions Coinbase as a compliant operator in one of the world's largest regulatory frameworks.",
+    "title": "Coinbase Secures EU-Wide Crypto Services Approval Under MiCA",
+    "summary": "Coinbase obtained EU-wide crypto services approval under the Markets in Crypto-Assets (MiCA) regulation. This authorization allows Coinbase to operate across all EU member states with a single license, marking a major regulatory milestone for the exchange.",
     "categories": [
-      "regulation",
-      "wallet"
+      "regulation"
     ],
     "importance": "medium",
+    "primary_link": "https://decrypt.co/326438/coinbase-mica-license-crypto-services-eu",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
+  },
+  {
+    "title": "Trezor and Cointelegraph Face Phishing Attacks",
+    "summary": "Trezor issued a phishing alert after attackers abused support contacts, while Cointelegraph's website was compromised with front-end exploits promoting fraudulent airdrops. These incidents highlight ongoing security threats targeting crypto users through trusted platforms.",
+    "categories": [
+      "security"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/359172/trezor-phishing-scam",
+    "additional_links": [
+      "https://decrypt.co/326435/cointelegraph-website-hacked-fake-airdrop-phishing-attack"
+    ],
+    "images": [],
     "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
     "emailDate": "Mon, 23 Jun 2025 14:03:35 +0000 (UTC)"
   }

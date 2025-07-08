@@ -1,23 +1,21 @@
 [
   {
-    "title": "Bitcoin Dominance Surge Masks Emerging Bear Market Signals",
-    "summary": "Bitcoin dominance has reached a new cycle high while two critical indicators suggest broader market stress is emerging. Market liquidity is drying up and stablecoin flows are weakening as major buyers pull back, with key technical support levels now under threat.",
+    "title": "Bitcoin Dominance Hits Cycle High as Market Shows Bearish Signals",
+    "summary": "Bitcoin dominance has reached a new cycle high while critical indicators suggest broader market stress, with Ethereum unwinding from overleveraged futures positions despite initial ETF optimism. Market liquidity is drying up and stablecoin flows are retreating, with both BTC and ETH showing shifts from bullish to bearish trends as key technical support levels are being tested.",
     "categories": [
       "defi",
-      "analysis"
+      "security"
     ],
     "importance": "high",
-    "source": "10x Research <hi@update.10xresearch.com>",
-    "emailDate": "Mon, 23 Jun 2025 00:19:23 +0000 (UTC)"
-  },
-  {
-    "title": "Ethereum Breaks Below Critical $2,420 Support Level",
-    "summary": "Ethereum is experiencing a significant correction after breaking below the anticipated $2,420 support level, unraveling under overleveraged futures positions. The shift from bullish to bearish trend follows the fading of initial ETF optimism documented in earlier June reports.",
-    "categories": [
-      "defi",
-      "analysis"
+    "primary_link": "https://update.10xresearch.com/p/bitcoin-dominance-surges-so-why-are-these-two-indicators-flashing-bear-market-8649",
+    "additional_links": [
+      "https://update.10xresearch.com/p/is-wall-street-really-warming-up-to-ethereum-the-truth-behind-eth-etf-inflows-6b7a",
+      "https://update.10xresearch.com/p/coinbase-just-closed-the-valuation-gap-now-what-1e94",
+      "https://update.10xresearch.com/upgrade"
     ],
-    "importance": "high",
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/be47c06d-fd0e-4506-a6fa-5c6fbe69b0f5/image.png?t=1750637310"
+    ],
     "source": "10x Research <hi@update.10xresearch.com>",
     "emailDate": "Mon, 23 Jun 2025 00:19:23 +0000 (UTC)"
   }

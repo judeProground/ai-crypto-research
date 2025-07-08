@@ -6,22 +6,57 @@ import "dotenv/config";
 
 const PROCESSED_DIR = path.join(process.cwd(), "data/processed");
 
-async function getAllAnalyzedArticles() {
+async function getAllAnalyzedArticles({ date, days = 3 } = {}) {
   const allArticles = [];
-  try {
-    const dateFolders = await fs.readdir(PROCESSED_DIR);
+  const foldersToRead = [];
 
-    for (const folder of dateFolders) {
+  try {
+    if (date) {
+      // If a specific date is provided, use it
+      console.log(`Reading processed data for specific date: ${date}`);
+      foldersToRead.push(date);
+    } else {
+      // Otherwise, use the days window
+      console.log(`Reading processed data from the last ${days} days.`);
+      const allFolders = await fs.readdir(PROCESSED_DIR);
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() - days);
+      targetDate.setHours(0, 0, 0, 0);
+
+      for (const folder of allFolders) {
+        const folderDate = new Date(folder);
+        if (!isNaN(folderDate.getTime()) && folderDate >= targetDate) {
+          foldersToRead.push(folder);
+        }
+      }
+    }
+
+    if (foldersToRead.length === 0) {
+      console.log("No relevant date folders found to process.");
+      return [];
+    }
+
+    console.log(`Found folders to read: ${foldersToRead.join(", ")}`);
+
+    for (const folder of foldersToRead) {
       const folderPath = path.join(PROCESSED_DIR, folder);
-      const stats = await fs.stat(folderPath);
-      if (stats.isDirectory()) {
-        const files = await fs.readdir(folderPath);
-        for (const file of files) {
-          if (path.extname(file) === ".json") {
-            const content = await fs.readFile(path.join(folderPath, file), "utf-8");
-            allArticles.push(...JSON.parse(content));
+      try {
+        const stats = await fs.stat(folderPath);
+        if (stats.isDirectory()) {
+          const files = await fs.readdir(folderPath);
+          for (const file of files) {
+            if (path.extname(file) === ".json") {
+              const content = await fs.readFile(path.join(folderPath, file), "utf-8");
+              allArticles.push(...JSON.parse(content));
+            }
           }
         }
+      } catch (e) {
+        if (e.code === "ENOENT") {
+          console.log(`Directory not found for date: ${folder}. Skipping.`);
+          continue;
+        }
+        throw e;
       }
     }
   } catch (error) {
@@ -34,26 +69,48 @@ async function getAllAnalyzedArticles() {
   return allArticles;
 }
 
-export async function runReportGeneration() {
-  console.log("\nStarting report generation...");
-  const articles = await getAllAnalyzedArticles();
+export async function runReportGeneration({ date, days = 3 } = {}) {
+  console.log(`\nStarting report generation...`);
+  const generatedReportPaths = [];
 
-  if (articles.length === 0) {
-    console.log("No analyzed articles found to report on.");
-    return null;
+  const datesToProcess = [];
+  if (date) {
+    // If a specific date is provided, only process that one.
+    datesToProcess.push(date);
+  } else {
+    // Otherwise, build a list of dates for the N-day window.
+    const today = new Date();
+    for (let i = 0; i < days; i++) {
+      const targetDate = new Date(today);
+      targetDate.setDate(today.getDate() - i);
+      datesToProcess.push(targetDate.toISOString().split("T")[0]);
+    }
   }
 
-  console.log(`Found ${articles.length} articles. Generating summary...`);
-  const report = await generateReport(articles);
+  console.log(`Attempting to generate reports for: ${datesToProcess.join(", ")}`);
 
-  const reportDir = path.join(process.cwd(), "data/reports");
-  await fs.mkdir(reportDir, { recursive: true });
-  const today = new Date().toISOString().split("T")[0];
-  const reportPath = path.join(reportDir, `report-${today}.md`);
-  await fs.writeFile(reportPath, report);
+  for (const dateString of datesToProcess) {
+    console.log(`\n--- Processing date: ${dateString} ---`);
+    const articles = await getAllAnalyzedArticles({ date: dateString });
 
-  console.log(`Report successfully generated and saved to ${reportPath}`);
-  return reportPath;
+    if (articles.length === 0) {
+      console.log(`No articles found for ${dateString}. Skipping report generation.`);
+      continue;
+    }
+
+    console.log(`Found ${articles.length} articles. Generating summary for ${dateString}...`);
+    const report = await generateReport(articles, dateString);
+
+    const reportDir = path.join(process.cwd(), "data/reports");
+    await fs.mkdir(reportDir, { recursive: true });
+    const reportPath = path.join(reportDir, `report-${dateString}.md`);
+    await fs.writeFile(reportPath, report);
+
+    console.log(`Report for ${dateString} successfully generated and saved to ${reportPath}`);
+    generatedReportPaths.push(reportPath);
+  }
+
+  return generatedReportPaths;
 }
 
 export async function runSlackSending(reportPath = null) {
@@ -90,9 +147,11 @@ export async function runSlackSending(reportPath = null) {
 
 export async function runReporting() {
   console.log("\nStarting full reporting pipeline...");
-  const reportPath = await runReportGeneration();
+  const reportPaths = await runReportGeneration();
 
-  if (reportPath) {
-    await runSlackSending(reportPath);
+  if (reportPaths.length > 0) {
+    for (const reportPath of reportPaths) {
+      await runSlackSending(reportPath);
+    }
   }
 }

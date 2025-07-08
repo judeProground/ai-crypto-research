@@ -19,17 +19,20 @@ export async function processNewsletter(newsletterContent) {
 The following is the full content of a crypto newsletter. Your task is to meticulously analyze it from the perspective of a security-conscious investor.
 
 First, identify each distinct article or topic.
-Then, for each identified article, create a structured analysis in a JSON object with the following keys: "title", "summary", "categories", "importance".
+Then, for each identified article, create a structured analysis in a JSON object with the following keys: "title", "summary", "categories", "importance", "primary_link", "additional_links", "images".
 
 Follow these rules exactly:
 - "title": Create a concise, descriptive title for the specific article.
 - "summary": Provide an expert-level summary, including specific details and context. The summary must be 2-3 lines long.
 - "categories": An array of strings. Choose from: [defi, security, regulation, wallet, funding, meme]. Suggest a new lowercase category if needed.
-- "importance": Assign importance based on these criteria:
-    - "fatal": Critical, widespread vulnerability; major hack (> $10M); major exchange insolvency.
-    - "high": Significant new vulnerability; notable hack (< $10M); major regulatory action; new widespread scam.
-    - "medium": New research paper; significant project launch/funding; notable legal development.
-    - "low": General news; market analysis; opinion pieces; minor updates.
+- "importance": Assign importance based on these criteria. Pay close attention to monetary values, scale of impact, and direct investment opportunities.
+    - "fatal": Critical, widespread vulnerability; major hack (> $50M); major exchange insolvency or shutdown.
+    - "high": Significant new vulnerability; notable hack ($5M - $50M); major regulatory action by a large governing body; new widespread scam affecting many users.
+    - "medium": New research paper with significant findings; major project launch or funding round (> $10M); notable legal development or lawsuit.
+    - "low": General news; market analysis; opinion pieces; minor project updates or partnerships.
+- "primary_link": A single string. Extract the most important, primary hyperlink *directly from the article's text*. This should be the main source link or call-to-action. If no clear primary link exists, return null.
+- "additional_links": An array of strings. Extract all other secondary hyperlinks *directly from the article's text*. If no other links are present, return an empty array "[]".
+- "images": An array of strings. Extract all relevant image URLs *directly from the article's text*. If no images are available, return an empty array "[]".
 
 Return a single JSON array of all the analysis objects. You must return ONLY the raw JSON array and nothing else.
 
@@ -65,14 +68,18 @@ ${newsletterContent}
   }
 }
 
-export async function generateReport(analyzedArticles) {
+export async function generateReport(analyzedArticles, reportDate) {
   const prompt = `You are an expert blockchain researcher and investor. You have analyzed several articles and now need to create a high-level summary report for your executive team.
 
-The following is a JSON array of analyzed articles, each with a title, summary, categories, and importance level.
+The following is a JSON array of analyzed articles. Your task is to generate a concise, insightful report for ${reportDate}.
 
-Your task is to generate a concise, insightful report that synthesizes the key findings. The report should have two sections:
-1.  **Executive Summary**: A brief, high-level overview (3-4 sentences) of the most critical news and trends from the articles. Focus on what an investor or decision-maker needs to know.
-2.  **Key Findings**: A bulleted list detailing the most important articles. Each bullet point should start with the article's importance level in brackets (e.g., [fatal], [high]) followed by its title and a one-sentence summary of the key takeaway. Prioritize the most important articles first.
+The report must have the following sections:
+1.  **Title**: The main title should be "🔗 Blockchain Market Intelligence Report for ${reportDate}".
+2.  **Executive Summary**: A brief, high-level overview (3-4 sentences) of the most critical news and trends. To identify trends, pay close attention to recurring themes, categories, or specific entities mentioned across multiple articles. Synthesize these recurring topics into a cohesive narrative about the current state of the market.
+3.  **Key Findings**: A bulleted list detailing the most important articles. The list must be sorted by importance ('fatal' first, then 'high', 'medium', 'low'). For each article, format the output *exactly* as follows: "[ICON] *<primary_link|Title>* (Source: [Source Name]): [One-sentence summary]".
+    - For the link, use the format *<primary_link|Title>*. If 'primary_link' is null, just bold the title: *Title*.
+    - Use a relevant emoji icon for the importance level: fatal: '🚨', high: '🔥', medium: '⚠️', low: '📄'.
+    - For '[Source Name]', extract the human-readable name from the 'source' field (e.g., get "10x Research" from "10x Research <hi@update.10xresearch.com>").
 
 Here is the data to summarize:
 ---

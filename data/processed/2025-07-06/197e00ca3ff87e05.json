@@ -1,0 +1,127 @@
+[
+  {
+    "title": "Circle and Ripple Apply for US National Banking Licenses",
+    "summary": "Circle and Ripple have both applied for national banking licenses from the OCC, with Circle seeking to custody USDC reserves directly and Ripple aiming for oversight of its RLUSD stablecoin. This move capitalizes on the Trump administration's favorable crypto regulatory climate and could significantly boost institutional confidence in stablecoins.",
+    "categories": [
+      "regulation",
+      "funding"
+    ],
+    "importance": "high",
+    "primary_link": "https://www.theblock.co/post/360433/circle-applies-for-us-banking-license-enabling-it-to-act-as-custodian-for-usdc-reserves-report",
+    "additional_links": [
+      "https://www.theblock.co/post/360817/ripple-applies-for-us-banking-license-following-circle"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/020711d4-6986-4435-8517-311eeb065bdf/image.png?t=1751795934"
+    ],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "Financial Industry Group Opposes Tokenized Equities and SEC Exemptions",
+    "summary": "A major financial industry group is pushing back against tokenized equities and urging the SEC to reject crypto firms' exemption requests. This opposition highlights the tension between traditional finance and crypto innovation in the securities market.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/360853/financial-industry-group-pushes-back-on-tokenized-equities-urges-sec-to-reject-crypto-firms-exemptions",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "NY Attorney General Warns Against Stablecoin Bills",
+    "summary": "New York Attorney General Letitia James has warned that proposed stablecoin bills put Americans at risk and is urging for stronger oversight. This represents significant regulatory pushback at the state level against federal stablecoin legislation.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/360649/ny-attorney-general-letitia-james-warns-stablecoin-bills-put-americans-at-risk-urges-stronger-oversight",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "Crypto Tax Amendment Dropped from Senate Bill",
+    "summary": "A crypto tax amendment has been dropped from the Senate's 'Big, Beautiful Bill,' though Senator Lummis plans to continue pushing for the reforms. This setback delays potential tax clarity for crypto transactions at the federal level.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/360600/crypto-tax-amendment-dropped-from-senates-big-beautiful-bill-but-sen-lummis-plans-to-keep-pushing",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "TradFi Group Calls for Progressive SEC Crypto Rules",
+    "summary": "A traditional finance group is calling on the SEC to establish open and progressive crypto rules through a dedicated task force. This represents a shift in TradFi's approach towards constructive engagement with crypto regulation.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "low",
+    "primary_link": "https://www.theblock.co/post/361044/sifma-sec-crypto-task-force",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "Euro Stablecoin by DWS and Deutsche Bank Receives Regulatory Approval",
+    "summary": "A euro-denominated stablecoin developed by DWS and Deutsche Bank has received regulatory approval, marking a significant entry of traditional financial institutions into the stablecoin market. This approval demonstrates European regulators' willingness to work with established financial players on digital assets.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://cointelegraph.com/news/euro-stablecoin-by-dws-and-deutsche-bank-gets-regulatory-approval",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "US Secret Service Recovers $400M in Crypto from Criminals",
+    "summary": "The US Secret Service team has successfully recovered nearly $400 million in cryptocurrency from criminal activities. This demonstrates the increasing effectiveness of law enforcement in tracking and recovering stolen crypto assets.",
+    "categories": [
+      "security"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/361177/u-s-secret-service-team-has-recovered-nearly-400-million-in-crypto-from-criminals-bloomberg",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "Tokenized Equities Face Regulatory Grey Zone and Investor Confusion",
+    "summary": "Tokenized equities on platforms like Kraken, Bybit, and Robinhood exist in a legal grey area where investors don't actually own shares but hold synthetic tokens without voting rights or asset claims. The confusion was highlighted when Robinhood offered 'OpenAI tokens' that had no real stake in OpenAI, prompting calls for clearer regulations to protect retail investors.",
+    "categories": [
+      "regulation",
+      "security"
+    ],
+    "importance": "high",
+    "primary_link": "https://cointelegraph.com/news/investor-beware-tokenized-equity-regulatory-grey-zone",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  },
+  {
+    "title": "Chinese Tech Giants Urge Central Bank to Approve Offshore Yuan Stablecoins",
+    "summary": "Major Chinese tech companies including JD.com and Ant Group are urging the central bank to approve offshore yuan stablecoins. This represents a significant push from China's tech sector to expand the digital yuan's reach beyond domestic borders.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/361053/jd-ant-group-urge-central-bank-offshore-yuan-stablecoins",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 06 Jul 2025 14:03:30 +0000 (UTC)"
+  }
+]

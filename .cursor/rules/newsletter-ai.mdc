@@ -1,5 +1,116 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: false
 ---
+# Newsletter AI Project Rules
+
+This project is an AI-powered newsletter generation system that crawls crypto articles, analyzes them, and generates reports.
+
+## Project Architecture
+
+- **Entry Points:**
+  - `src/main.js` - Combined pipeline runner
+  - `src/index.js` - Processing pipeline (crawling + analysis)
+  - `src/reporting.js` - Report generation pipeline
+
+- **Core Modules:**
+  - `src/crawler.js` - Email/newsletter fetching via Gmail API
+  - `src/llm.js` - AI processing using Anthropic Claude
+  - `src/slack.js` - Slack integration for report delivery
+  - `src/auth.js` - Authentication helpers
+  - `src/schema.js` - Data validation schemas
+
+## Data Structure
+
+- **Input:** Raw newsletter emails from Gmail
+- **Processing:** Articles extracted and analyzed via AI
+- **Output:** 
+  - Processed data: `data/processed/YYYY-MM-DD/[email-id].json`
+  - Reports: `data/reports/report-YYYY-MM-DD.md`
+
+## Development Patterns
+
+### **File Organization**
+- Keep processing logic separate from reporting logic
+- Use ES modules (`import`/`export`) consistently
+- Store configuration in environment variables via `.env`
+
+### **Error Handling**
+```javascript
+// ✅ DO: Graceful error handling with context
+try {
+  const result = await processNewsletter(newsletter.body);
+} catch (error) {
+  console.error(`Failed to process newsletter ${newsletter.id}:`, error);
+  // Continue processing other newsletters
+}
+
+// ❌ DON'T: Let single failures crash entire pipeline
+const result = await processNewsletter(newsletter.body); // No error handling
+```
+
+### **Data Processing**
+```javascript
+// ✅ DO: Add metadata to processed articles
+const articlesWithExtras = analyzedArticles.map((article) => ({
+  ...article,
+  source: newsletter.from,
+  emailDate: newsletter.date,
+}));
+
+// ✅ DO: Organize output by date
+const dateSubfolder = `${year}-${month}-${day}`;
+const outputDir = path.join(process.cwd(), "data/processed", dateSubfolder);
+```
+
+### **Logging**
+```javascript
+// ✅ DO: Provide clear progress indicators
+console.log(`Found ${newsletters.length} new newsletters to process.`);
+console.log(`Processing email: "${newsletter.subject}"`);
+console.log(`-> Successfully analyzed and saved ${articles.length} articles`);
+
+// ❌ DON'T: Silent processing
+await processNewsletter(newsletter); // No feedback
+```
+
+### **AI Integration**
+- Use structured prompts for consistent article analysis
+- Implement retry logic for API failures
+- Validate AI responses against expected schema
+- Keep AI processing separate from data I/O operations
+
+### **Command Separation**
+- Processing: `npm run process` - Crawl and analyze newsletters
+- Generate Report: `npm run generate-report` - Generate report from processed data
+- Send Slack: `npm run send-slack` - Send existing report to Slack
+- Full Reporting: `npm run report` - Generate report and send to Slack
+- Full Pipeline: `npm run start` - Complete pipeline (processing + reporting + slack)
+
+### **Environment Configuration**
+Required environment variables:
+- `ANTHROPIC_API_KEY` - For AI analysis
+- `SLACK_BOT_TOKEN` - For report delivery
+- Gmail API credentials for newsletter fetching
+
+## Testing Strategy
+
+- Test each module independently
+- Mock external APIs (Gmail, Anthropic, Slack) in tests
+- Validate data schemas for processed articles
+- Test error recovery scenarios
+
+## Performance Considerations
+
+- Process newsletters sequentially to avoid API rate limits
+- Batch article analysis when possible
+- Cache processed results to avoid reprocessing
+- Use appropriate timeouts for external API calls
+
+## Security
+
+- Never commit API keys or credentials
+- Use service accounts for Gmail API access
+- Validate all external data before processing
+- Sanitize content before AI analysis

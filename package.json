@@ -4,11 +4,11 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "start": "node src/main.js",
-    "process": "node src/process.js",
-    "report": "node src/report.js",
-    "generate-report": "node src/generate-report.js",
-    "send-slack": "node src/send-slack.js",
+    "start": "node cli/index.js full-run",
+    "fetch": "node cli/index.js fetch",
+    "process": "node cli/index.js process",
+    "generate-report": "node cli/index.js generate-report",
+    "send-report": "node cli/index.js send-report",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
     "@google-cloud/local-auth": "^3.0.1",
     "@slack/web-api": "^7.9.2",
     "dotenv": "^16.5.0",
-    "googleapis": "^150.0.1"
+    "googleapis": "^150.0.1",
+    "minimist": "^1.2.8"
   }
 }

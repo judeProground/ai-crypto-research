@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Critical Crypto Security Warning: Your Seed Phrases Are at Risk",
+    "summary": "FIP Crypto warns that common practices like screenshots, password managers, and hot wallets expose seed phrases to hackers. The note emphasizes that one mistake can lead to permanent loss of assets and on-chain footprint, highlighting critical security vulnerabilities in everyday crypto storage methods.",
+    "categories": [
+      "security",
+      "wallet"
+    ],
+    "importance": "high",
+    "primary_link": "https://substack.com/@fipcrypto/note/c-130612828?utm_source=feed-email-digest",
+    "additional_links": [],
+    "images": [],
+    "source": "Substack <no-reply@substack.com>",
+    "emailDate": "Sat, 5 Jul 2025 22:14:50 +0000"
+  },
+  {
+    "title": "Model Context Protocol (MCP) Limitations in the Age of AI Agents",
+    "summary": "Adeniyi.sui discusses the limitations of the Model Context Protocol (MCP) for AI agents. The post includes a video component and has garnered significant engagement with 16 likes and 4 comments, suggesting important technical insights for the AI and blockchain intersection.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://substack.com/@adeniyisui/note/c-131023556?utm_source=feed-email-digest",
+    "additional_links": [],
+    "images": [
+      "https://substackcdn.com/image/fetch/$s_!s8N5!,w_1100,h_1100,c_pad,f_auto,q_auto:good,fl_progressive:steep/l_play_button_usfui2,w_144,e_colorize:0/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fuser%2F243196279%2F0577eb12-44dd-46f1-837e-3a673e984e63%2Ftranscoded-00001.png"
+    ],
+    "source": "Substack <no-reply@substack.com>",
+    "emailDate": "Sat, 5 Jul 2025 22:14:50 +0000"
+  },
+  {
+    "title": "Bitcoin Supply Shortage Analysis: Sellers Running Out",
+    "summary": "Viktor posts a brief but potentially significant market analysis suggesting that Bitcoin sellers will run out of coins to sell. This supply-side perspective could indicate upcoming price movements or market dynamics shifts.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "primary_link": "https://substack.com/@cryptonarratives/note/c-131472301?utm_source=feed-email-digest",
+    "additional_links": [],
+    "images": [],
+    "source": "Substack <no-reply@substack.com>",
+    "emailDate": "Sat, 5 Jul 2025 22:14:50 +0000"
+  }
+]

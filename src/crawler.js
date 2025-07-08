@@ -1,5 +1,9 @@
 import { google } from "googleapis";
 import { authorize } from "./auth.js";
+import fs from "fs/promises";
+import path from "path";
+
+const PROCESSED_DIR = path.join(process.cwd(), "data/processed");
 
 function findPart(parts, mimeType) {
   for (const part of parts) {
@@ -51,9 +55,34 @@ async function getMessageDetails(auth, messageId) {
   return { id: messageId, subject, from, date, body };
 }
 
+async function isProcessed(messageId) {
+  try {
+    const dateFolders = await fs.readdir(PROCESSED_DIR);
+    for (const folder of dateFolders) {
+      const folderPath = path.join(PROCESSED_DIR, folder);
+      const stats = await fs.stat(folderPath);
+      if (stats.isDirectory()) {
+        const filePath = path.join(folderPath, `${messageId}.json`);
+        try {
+          await fs.access(filePath);
+          return true; // File exists
+        } catch (e) {
+          // File does not exist, continue checking other folders
+        }
+      }
+    }
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      return false; // Processed directory doesn't exist, so nothing is processed
+    }
+    throw error;
+  }
+  return false;
+}
+
 const GMAIL_QUERY = "in:inbox";
 
-export async function fetchLatestNewsletters() {
+export async function fetchLatestNewsletters({ days = 3 } = {}) {
   const auth = await authorize();
   const gmail = google.gmail({ version: "v1", auth });
   if (!auth) {
@@ -62,15 +91,15 @@ export async function fetchLatestNewsletters() {
   }
 
   const today = new Date();
-  const yesterday = new Date(today);
-  yesterday.setDate(today.getDate() - 1);
+  const targetDate = new Date(today);
+  targetDate.setDate(today.getDate() - days);
 
-  const year = yesterday.getFullYear();
-  const month = String(yesterday.getMonth() + 1).padStart(2, "0");
-  const day = String(yesterday.getDate()).padStart(2, "0");
-  const yesterdayQuery = `after:${year}/${month}/${day}`;
+  const year = targetDate.getFullYear();
+  const month = String(targetDate.getMonth() + 1).padStart(2, "0");
+  const day = String(targetDate.getDate()).padStart(2, "0");
+  const dateQuery = `after:${year}/${month}/${day}`;
 
-  const finalQuery = `${GMAIL_QUERY} ${yesterdayQuery}`;
+  const finalQuery = `${GMAIL_QUERY} ${dateQuery}`;
   console.log(`Using Gmail query: "${finalQuery}"`);
 
   const listResponse = await gmail.users.messages.list({
@@ -86,7 +115,11 @@ export async function fetchLatestNewsletters() {
 
   const newsletters = [];
   for (const message of messages) {
-    console.log(`Fetching details for message ID: ${message.id}`);
+    if (await isProcessed(message.id)) {
+      console.log(`Skipping already processed message ID: ${message.id}`);
+      continue;
+    }
+    console.log(`Fetching details for new message ID: ${message.id}`);
     const details = await getMessageDetails(auth, message.id);
     newsletters.push(details);
   }

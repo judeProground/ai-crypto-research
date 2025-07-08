@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Dormant Bitcoin Wallets Move $8.7B After 14 Years",
+    "summary": "A Bitcoin OG holding 80K BTC (~$8.69B) reactivated eight wallets dormant since 2011 and transferred the entire stash to new addresses. The wallets originally received BTC when prices were under $4, with two wallets getting 20K BTC at $0.78 and six wallets receiving 60K BTC at $3.37.",
+    "categories": [
+      "wallet",
+      "security"
+    ],
+    "importance": "high",
+    "primary_link": "https://x.com/lookonchain/status/1941152575514198214",
+    "additional_links": [
+      "https://twitter.com/lookonchain/status/1941126810961653780"
+    ],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  },
+  {
+    "title": "ETH Strategy Launches Leveraged ETH Without Liquidation Risk",
+    "summary": "ETH Strategy is a new DeFi protocol offering leveraged Ethereum exposure without liquidation risks through convertible bonds. Users deposit stablecoins to receive debt tokens and NFT options, while the protocol uses funds to buy ETH for its treasury, providing holders with high-beta ETH exposure.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": null,
+    "additional_links": [
+      "https://clusteryield.com/",
+      "https://intentx.io/",
+      "https://mitosis.org/",
+      "https://init.capital/",
+      "https://indx.app/"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/195ee88a-efa3-4c81-9c83-0fb512860cec/image.png?t=1751864440"
+    ],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  },
+  {
+    "title": "DeFi Fees Surge 58% to $577M Monthly High in 2025",
+    "summary": "Monthly DeFi fees have surged 58% from April lows to approximately $577M as on-chain activity rebounds. PancakeSwap led with $275M in fees, while protocols like Uniswap, Aave, and Pump.fun optimize fee structures across swaps, lending, and memecoin trading.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/360379/pancakeswap-pump-fun-help-push-defi-fees-to-2025-highs-as-onchain-activity-regains-momentum",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/5080ea24-21c3-4791-9b08-4231ca4b5885/Screen_Shot_2025-07-07_at_12.08.06.png?t=1751864890"
+    ],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  },
+  {
+    "title": "US Secret Service Recovers $400M in Crypto from Criminals",
+    "summary": "The US Secret Service has recovered nearly $400M in cryptocurrency from criminals over the past decade, with much held in a single cold-storage wallet. In June, the agency seized $225M in its largest crypto bust to date, working with FBI and training officials in over 60 countries.",
+    "categories": [
+      "security",
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/361177/u-s-secret-service-team-has-recovered-nearly-400-million-in-crypto-from-criminals-bloomberg",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2cf5c7f4-563a-4c59-8018-98523f1d88f1/image.png?t=1751865076"
+    ],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  },
+  {
+    "title": "Metaplanet Adds 2,205 BTC for $239M",
+    "summary": "Metaplanet has added 2,205 BTC for approximately $239M to its holdings, now ranking fifth globally with 15,555 Bitcoin holdings.",
+    "categories": [
+      "funding"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/361243/metaplanet-adds-2205-btc-for-nearly-239-million-now-ranks-fifth-globally-with-15555-bitcoin-holdings",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  },
+  {
+    "title": "Hong Kong Plans Stablecoin Licenses This Year",
+    "summary": "Hong Kong is planning to issue stablecoin licenses this year, though approvals are expected to remain in single digits according to reports.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "low",
+    "primary_link": "https://www.theblock.co/post/361235/hong-kong-eyes-stablecoin-licenses-this-year-but-approvals-likely-to-remain-in-single-digits-report",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  },
+  {
+    "title": "Vitalik Proposes Gas Limit Cap to Reduce DoS Risk",
+    "summary": "Ethereum co-founder Vitalik Buterin has proposed a gas limit cap of 16.77 million per transaction to reduce the risk of DoS attacks on the Ethereum network.",
+    "categories": [
+      "security"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.theblock.co/post/361247/ethereum-co-founder-proposes-gas-limit-cap-of-16-77-million-per-transaction-to-reduce-risk-of-dos-attacks",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Mon, 07 Jul 2025 14:04:35 +0000 (UTC)"
+  }
+]
