@@ -1,7 +1,7 @@
 [
   {
-    "title": "BONK Token Surges 75% as LetsBonk Overtakes Pumpfun in Trading Volume",
-    "summary": "BONK token has gained 75% in 14 days, driven by its LetsBonk launchpad surpassing Pumpfun with $411M in 24hr volume. The ecosystem's strength is evident in BONKbot generating $4.35M monthly fees and successful meme launches like USELESS (14x) and IKUN (10x).",
+    "title": "BONK Surges 75% as LetsBonk Overtakes Pumpfun in Trading Volume",
+    "summary": "BONK token rallied 75% in two weeks as its LetsBonk launchpad exceeded Pumpfun with $411M daily volume, while BONKbot became the top fee-generating Telegram bot at $4.35M monthly revenue. The ecosystem growth includes successful meme launches like USELESS ($20M to $280M) and IKUN (10x in 9 days), plus a $200K hackathon won by BESTCOIN.",
     "categories": [
       "defi",
       "meme"
@@ -14,11 +14,11 @@
     "emailDate": "Tue, 8 Jul 2025 03:12:16 +0000"
   },
   {
-    "title": "BONK Hackathon Awards $200K in Prizes to DeFi Innovators",
-    "summary": "BONK's recent hackathon concluded with $140K awarded to first place winner BESTCOIN, $50K to second place, and $10K to third place. This $200K total prize pool demonstrates BONK's commitment to ecosystem development.",
+    "title": "Pumpfun Token Sale Set for July 12 Exchange Launch",
+    "summary": "Pumpfun will launch its native PUMP token on exchanges July 12, offering 150 billion tokens at $0.04 USDT valuation. This marks a significant milestone for the popular Solana-based meme coin launchpad platform.",
     "categories": [
       "defi",
-      "funding"
+      "meme"
     ],
     "importance": "low",
     "primary_link": null,
@@ -28,22 +28,8 @@
     "emailDate": "Tue, 8 Jul 2025 03:12:16 +0000"
   },
   {
-    "title": "Pumpfun Token Sale Set for July 12 at $0.04 USDT",
-    "summary": "Pumpfun will launch its token sale on exchanges July 12, offering 150 billion PUMP tokens at $0.04 USDT per token. This represents a $6 billion fully diluted valuation for the popular meme coin launchpad.",
-    "categories": [
-      "defi",
-      "meme"
-    ],
-    "importance": "medium",
-    "primary_link": null,
-    "additional_links": [],
-    "images": [],
-    "source": "Crypto Integrated <salazarslytherin@substack.com>",
-    "emailDate": "Tue, 8 Jul 2025 03:12:16 +0000"
-  },
-  {
-    "title": "Paradigm Leads $11.5M Series A for Monad DEX Developer Kuru Labs",
-    "summary": "Kuru Labs secured $11.5M in Series A funding led by Paradigm to build a DEX on Monad using a hybrid CLOB-AMM model. This innovative approach combines central limit order books with automated market makers for enhanced liquidity and native limit orders.",
+    "title": "Paradigm Leads $11.5M Series A for Kuru Labs' Monad DEX",
+    "summary": "Kuru Labs secured $11.5M in Series A funding led by Paradigm to develop a DEX on Monad blockchain. The platform features a hybrid CLOB-AMM model combining central limit order books with automated market makers for enhanced liquidity and native limit orders.",
     "categories": [
       "defi",
       "funding"
@@ -57,7 +43,7 @@
   },
   {
     "title": "Metaplanet Purchases 2,205 BTC for $238.7M, Becomes 5th Largest Corporate Holder",
-    "summary": "Japanese investment firm Metaplanet added 2,205 BTC at an average price of $108,237, spending $238.7M to bring total holdings to 15,555 BTC. This positions Metaplanet as the 5th largest publicly listed corporate Bitcoin holder globally.",
+    "summary": "Japanese investment firm Metaplanet acquired 2,205 BTC at an average price of $108,237, investing $238.7 million to bring total holdings to 15,555 BTC. This positions Metaplanet as the world's 5th largest publicly listed corporate Bitcoin holder.",
     "categories": [
       "funding"
     ],
@@ -70,7 +56,7 @@
   },
   {
     "title": "Elon Musk's American Party to Support Bitcoin, Calls Fiat 'Hopeless'",
-    "summary": "Elon Musk announced his new American Party will support Bitcoin, stating 'fiat is hopeless' in a potential political endorsement of cryptocurrency. This marks a significant political development for crypto adoption in the United States.",
+    "summary": "Elon Musk announced his new American Party will officially support Bitcoin, stating 'fiat is hopeless' in a public declaration. This political endorsement from one of the world's most influential figures could significantly impact crypto adoption and regulation.",
     "categories": [
       "regulation"
     ],

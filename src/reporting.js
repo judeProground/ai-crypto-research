@@ -1,157 +1,116 @@
 import fs from "fs/promises";
 import path from "path";
-import { generateReport } from "./llm.js";
 import { sendSlackReport } from "./slack.js";
-import "dotenv/config";
+import { generateReport } from "./llm.js";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc.js";
+import timezone from "dayjs/plugin/timezone.js";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const PROCESSED_DIR = path.join(process.cwd(), "data/processed");
+const REPORTS_DIR = path.join(process.cwd(), "data/reports");
+const TIME_ZONE = "Asia/Seoul";
 
-async function getAllAnalyzedArticles({ date, days = 3 } = {}) {
-  const allArticles = [];
-  const foldersToRead = [];
-
+async function getArticlesForDate(dateString) {
+  const folderPath = path.join(PROCESSED_DIR, dateString);
+  const articles = [];
   try {
-    if (date) {
-      // If a specific date is provided, use it
-      console.log(`Reading processed data for specific date: ${date}`);
-      foldersToRead.push(date);
-    } else {
-      // Otherwise, use the days window
-      console.log(`Reading processed data from the last ${days} days.`);
-      const allFolders = await fs.readdir(PROCESSED_DIR);
-      const targetDate = new Date();
-      targetDate.setDate(targetDate.getDate() - days);
-      targetDate.setHours(0, 0, 0, 0);
-
-      for (const folder of allFolders) {
-        const folderDate = new Date(folder);
-        if (!isNaN(folderDate.getTime()) && folderDate >= targetDate) {
-          foldersToRead.push(folder);
+    const stats = await fs.stat(folderPath);
+    if (stats.isDirectory()) {
+      const files = await fs.readdir(folderPath);
+      for (const file of files) {
+        if (path.extname(file) === ".json") {
+          const content = await fs.readFile(path.join(folderPath, file), "utf-8");
+          articles.push(...JSON.parse(content));
         }
-      }
-    }
-
-    if (foldersToRead.length === 0) {
-      console.log("No relevant date folders found to process.");
-      return [];
-    }
-
-    console.log(`Found folders to read: ${foldersToRead.join(", ")}`);
-
-    for (const folder of foldersToRead) {
-      const folderPath = path.join(PROCESSED_DIR, folder);
-      try {
-        const stats = await fs.stat(folderPath);
-        if (stats.isDirectory()) {
-          const files = await fs.readdir(folderPath);
-          for (const file of files) {
-            if (path.extname(file) === ".json") {
-              const content = await fs.readFile(path.join(folderPath, file), "utf-8");
-              allArticles.push(...JSON.parse(content));
-            }
-          }
-        }
-      } catch (e) {
-        if (e.code === "ENOENT") {
-          console.log(`Directory not found for date: ${folder}. Skipping.`);
-          continue;
-        }
-        throw e;
       }
     }
   } catch (error) {
     if (error.code === "ENOENT") {
-      console.log("Processed data directory not found. Skipping report generation.");
-      return [];
+      console.log(`No processed data found for ${dateString}.`);
+    } else {
+      console.error(`Error reading articles for ${dateString}:`, error);
     }
-    throw error;
   }
-  return allArticles;
+  return articles;
 }
 
-export async function runReportGeneration({ date, days = 3 } = {}) {
-  console.log(`\nStarting report generation...`);
+export async function generateReportForDate(dateString, { force = false } = {}) {
+  const articles = await getArticlesForDate(dateString);
+  if (articles.length === 0) {
+    console.log(`No processed articles found for ${dateString}. Skipping report generation.`);
+    return null;
+  }
+
+  const reportPath = path.join(REPORTS_DIR, `report-${dateString}.md`);
+
+  // --- Regeneration Check ---
+  if (!force) {
+    try {
+      await fs.access(reportPath);
+      console.log(`Report for ${dateString} already exists. Use --force to regenerate.`);
+      return reportPath; // Return existing path
+    } catch (error) {
+      // File doesn't exist, proceed with generation.
+    }
+  }
+  // --- End Regeneration Check ---
+
+  console.log(`Found ${articles.length} articles for ${dateString}. Generating report...`);
+  const reportContent = await generateReport(articles, dateString);
+
+  await fs.mkdir(REPORTS_DIR, { recursive: true });
+  await fs.writeFile(reportPath, reportContent);
+
+  console.log(`Report for ${dateString} saved to ${reportPath}`);
+  return reportPath;
+}
+
+export async function runReportGeneration({ date = null, days = 1, force = false } = {}) {
+  await fs.mkdir(REPORTS_DIR, { recursive: true });
   const generatedReportPaths = [];
 
-  const datesToProcess = [];
   if (date) {
-    // If a specific date is provided, only process that one.
-    datesToProcess.push(date);
+    console.log(`Generating report for specified date: ${date}`);
+    const reportPath = await generateReportForDate(date, { force });
+    if (reportPath) {
+      generatedReportPaths.push(reportPath);
+    }
   } else {
-    // Otherwise, build a list of dates for the N-day window.
-    const today = new Date();
+    console.log(`Generating reports for the last ${days} day(s) based on KST.`);
+    const nowInKST = dayjs().tz(TIME_ZONE);
     for (let i = 0; i < days; i++) {
-      const targetDate = new Date(today);
-      targetDate.setDate(today.getDate() - i);
-      datesToProcess.push(targetDate.toISOString().split("T")[0]);
+      const dateToGenerate = nowInKST.subtract(i, "day").format("YYYY-MM-DD");
+      console.log(` -> Checking for data for ${dateToGenerate}...`);
+      const reportPath = await generateReportForDate(dateToGenerate, { force });
+      if (reportPath) {
+        generatedReportPaths.push(reportPath);
+      }
     }
   }
 
-  console.log(`Attempting to generate reports for: ${datesToProcess.join(", ")}`);
-
-  for (const dateString of datesToProcess) {
-    console.log(`\n--- Processing date: ${dateString} ---`);
-    const articles = await getAllAnalyzedArticles({ date: dateString });
-
-    if (articles.length === 0) {
-      console.log(`No articles found for ${dateString}. Skipping report generation.`);
-      continue;
-    }
-
-    console.log(`Found ${articles.length} articles. Generating summary for ${dateString}...`);
-    const report = await generateReport(articles, dateString);
-
-    const reportDir = path.join(process.cwd(), "data/reports");
-    await fs.mkdir(reportDir, { recursive: true });
-    const reportPath = path.join(reportDir, `report-${dateString}.md`);
-    await fs.writeFile(reportPath, report);
-
-    console.log(`Report for ${dateString} successfully generated and saved to ${reportPath}`);
-    generatedReportPaths.push(reportPath);
+  if (generatedReportPaths.length > 0) {
+    console.log("\nGenerated reports:");
+    generatedReportPaths.forEach((p) => console.log(`- ${p}`));
+  } else {
+    console.log("No new reports were generated.");
   }
 
   return generatedReportPaths;
 }
 
-export async function runSlackSending(reportPath = null) {
-  console.log("\nStarting Slack report sending...");
-
-  let reportContent;
-  if (reportPath) {
-    // Use provided report path
-    try {
-      reportContent = await fs.readFile(reportPath, "utf-8");
-      console.log(`Reading report from: ${reportPath}`);
-    } catch (error) {
-      console.error(`Failed to read report from ${reportPath}:`, error);
-      return;
-    }
-  } else {
-    // Use today's report
-    const today = new Date().toISOString().split("T")[0];
-    const defaultReportPath = path.join(process.cwd(), "data/reports", `report-${today}.md`);
-
-    try {
-      reportContent = await fs.readFile(defaultReportPath, "utf-8");
-      console.log(`Reading today's report from: ${defaultReportPath}`);
-    } catch (error) {
-      console.error(`Failed to read today's report from ${defaultReportPath}:`, error);
-      console.error("Please ensure a report has been generated first or provide a specific report path.");
-      return;
-    }
+export async function runSlackSending(reportPath) {
+  if (!reportPath) {
+    console.error("No report path provided to send.");
+    return;
   }
-
-  await sendSlackReport(reportContent);
-  console.log("Report successfully sent to Slack!");
-}
-
-export async function runReporting() {
-  console.log("\nStarting full reporting pipeline...");
-  const reportPaths = await runReportGeneration();
-
-  if (reportPaths.length > 0) {
-    for (const reportPath of reportPaths) {
-      await runSlackSending(reportPath);
-    }
+  try {
+    const reportContent = await fs.readFile(reportPath, "utf-8");
+    await sendSlackReport(reportContent);
+    console.log(`Report from ${reportPath} sent to Slack successfully.`);
+  } catch (error) {
+    console.error(`Failed to read or send report from ${reportPath}:`, error);
   }
 }

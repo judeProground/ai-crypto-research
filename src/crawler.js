@@ -2,6 +2,12 @@ import { google } from "googleapis";
 import { authorize } from "./auth.js";
 import fs from "fs/promises";
 import path from "path";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc.js";
+import timezone from "dayjs/plugin/timezone.js";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const PROCESSED_DIR = path.join(process.cwd(), "data/processed");
 
@@ -82,7 +88,7 @@ async function isProcessed(messageId) {
 
 const GMAIL_QUERY = "in:inbox";
 
-export async function fetchLatestNewsletters({ days = 3 } = {}) {
+export async function fetchLatestNewsletters({ days = 1 } = {}) {
   const auth = await authorize();
   const gmail = google.gmail({ version: "v1", auth });
   if (!auth) {
@@ -90,17 +96,26 @@ export async function fetchLatestNewsletters({ days = 3 } = {}) {
     return [];
   }
 
-  const today = new Date();
-  const targetDate = new Date(today);
-  targetDate.setDate(today.getDate() - days);
+  // --- KST Timezone Logic with dayjs ---
+  const timeZone = "Asia/Seoul";
+  const nowInKST = dayjs().tz(timeZone);
 
-  const year = targetDate.getFullYear();
-  const month = String(targetDate.getMonth() + 1).padStart(2, "0");
-  const day = String(targetDate.getDate()).padStart(2, "0");
-  const dateQuery = `after:${year}/${month}/${day}`;
+  const startDateKST = nowInKST.subtract(days - 1, "day").startOf("day");
+  const endDateKST = nowInKST.endOf("day");
+
+  const afterTimestamp = startDateKST.unix();
+  const beforeTimestamp = endDateKST.unix();
+
+  const dateQuery = `after:${afterTimestamp} before:${beforeTimestamp}`;
+  // --- End KST Timezone Logic ---
 
   const finalQuery = `${GMAIL_QUERY} ${dateQuery}`;
   console.log(`Using Gmail query: "${finalQuery}"`);
+  console.log(
+    `Fetching emails from ${startDateKST.format("YYYY-MM-DD HH:mm:ss")} to ${endDateKST.format(
+      "YYYY-MM-DD HH:mm:ss"
+    )} (KST)`
+  );
 
   const listResponse = await gmail.users.messages.list({
     userId: "me",

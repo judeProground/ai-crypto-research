@@ -19,6 +19,7 @@
     "@anthropic-ai/sdk": "^0.54.0",
     "@google-cloud/local-auth": "^3.0.1",
     "@slack/web-api": "^7.9.2",
+    "dayjs": "^1.11.13",
     "dotenv": "^16.5.0",
     "googleapis": "^150.0.1",
     "minimist": "^1.2.8"

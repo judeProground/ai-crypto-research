@@ -14,15 +14,22 @@ async function main() {
 
     case "process":
       console.log("Executing command: process");
-      await processSavedNewsletters({ days: argv.days ? parseInt(argv.days, 10) : 3 });
+      await processSavedNewsletters({
+        days: argv.days ? parseInt(argv.days, 10) : 1,
+        force: argv.force,
+      });
       break;
 
     case "generate-report":
       console.log("Executing command: generate-report");
-      const reportDays = argv.days ? parseInt(argv.days, 10) : 3;
+      const reportDays = argv.days ? parseInt(argv.days, 10) : 1;
       const reportDate = argv.date;
       try {
-        await runReportGeneration({ date: reportDate, days: reportDays });
+        await runReportGeneration({
+          date: reportDate,
+          days: reportDays,
+          force: argv.force,
+        });
         console.log('\nCommand "generate-report" completed successfully.');
       } catch (error) {
         console.error(`Error during generate-report command:`, error);
@@ -47,12 +54,26 @@ async function main() {
 
     case "full-run":
       console.log("Executing command: full-run");
-      await fetchAndSaveNewsletters({ days: argv.days ? parseInt(argv.days, 10) : 1 });
-      await processSavedNewsletters({ days: argv.days ? parseInt(argv.days, 10) : 3 });
-      const reportPaths = await runReportGeneration({ date: argv.date, days: argv.days ? parseInt(argv.days, 10) : 3 });
-      if (reportPaths.length > 0) {
-        for (const path of reportPaths) {
-          await runSlackSending(path);
+      if (argv.date) {
+        // If a specific date is provided, only process and report for that date.
+        console.log(`Running for a specific date: ${argv.date}. Fetching will be skipped.`);
+        await processSavedNewsletters({ date: argv.date, force: argv.force });
+        const generatedReports = await runReportGeneration({ date: argv.date, force: argv.force });
+        if (generatedReports && generatedReports.length > 0) {
+          for (const reportPath of generatedReports) {
+            await runSlackSending(reportPath);
+          }
+        }
+      } else {
+        // Default behavior: fetch for today, process, and report.
+        const days = argv.days ? parseInt(argv.days, 10) : 1;
+        await fetchAndSaveNewsletters({ days });
+        await processSavedNewsletters({ days, force: argv.force });
+        const generatedReports = await runReportGeneration({ days, force: argv.force });
+        if (generatedReports && generatedReports.length > 0) {
+          for (const reportPath of generatedReports) {
+            await runSlackSending(reportPath);
+          }
         }
       }
       break;
