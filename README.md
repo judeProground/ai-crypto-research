@@ -49,47 +49,62 @@ A `token.json` file will be created in the project root. This file stores your a
 
 ## Usage
 
-The application is controlled via a modular command-line interface. You can run these commands using `npm run <script_name>` or `node cli/index.js <command>`.
+The application is controlled via a modular command-line interface.
 
 ### All-in-One Command
 
-- **`npm start`**
+- **`node cli/index.js full-run`** (or `npm start`)
   - Runs the entire pipeline in sequence.
-  - By default (with no flags), it fetches newsletters for today (KST), processes them, generates a report, and sends it to Slack.
-  - Use `--days=<number>` to process the last number of days.
-  - Use `--date=<YYYY-MM-DD>` to process and report on a specific past date (fetching is skipped).
-  - Alias for `node cli/index.js full-run`.
+  - **Default Behavior**: Fetches newsletters for today (KST), processes them, generates a report, and sends it to Slack.
+  - **With `--days`**: Processes the last N days.
+  - **With `--date`**: Processes a specific past date (skips fetching).
+  - **With `--force`**: Re-processes or re-generates existing data.
 
 ### Independent Commands
 
-These commands allow you to run each step of the pipeline separately.
-
 - **Fetch Newsletters**
 
-  - `npm run fetch -- --days=<number>`
-  - Fetches unread newsletters from the last `<number>` of days (default is 1). `--days=1` fetches from today (KST).
-  - _Example_: `npm run fetch -- --days=7`
+  - `node cli/index.js fetch --days=<number>`
+  - Fetches unread newsletters from the last N days (default: 1).
 
 - **Process Newsletters**
 
-  - `npm run process -- --days=<number>`
-  - Analyzes raw newsletters that have been fetched within the last `<number>` of days (default is 1). Saves the structured data to `data/processed/`.
-  - _Example_: `npm run process`
-  - _Note_: Add `--force` to re-process newsletters that already exist in the `data/processed` directory.
+  - `node cli/index.js process --days=<number> | --date=<YYYY-MM-DD>`
+  - Analyzes raw newsletters for the specified timeframe. Use `--force` to re-process.
 
 - **Generate Reports**
 
-  - `npm run generate-report -- --days=<number>`
-  - `npm run generate-report -- --date=<YYYY-MM-DD>`
-  - Generates daily markdown reports for the specified time window (default is the last 1 day) and saves them to `data/reports/`. Does not send to Slack.
-  - _Example_: `npm run generate-report -- --days=2`
-  - _Example_: `npm run generate-report -- --date=2025-07-07`
-  - _Note_: Add `--force` to re-generate a report that already exists.
+  - `node cli/index.js generate-report --days=<number> | --date=<YYYY-MM-DD>`
+  - Creates daily markdown reports. Use `--force` to re-generate.
 
 - **Send a Report**
-  - `npm run send-report -- <path/to/report.md>`
-  - Sends a specific, already-generated report file to Slack.
-  - _Example_: `npm run send-report -- data/reports/report-2025-07-07.md`
+  - `node cli/index.js send-report <path/to/report.md>`
+  - Sends a specific, pre-generated report file to Slack.
+
+## Examples
+
+```bash
+# Run the full pipeline for today
+npm start
+
+# Run the full pipeline for the last 3 days, forcing reprocessing
+npm start -- --days=3 --force
+
+# Run the full pipeline for a specific past date
+npm start -- --date=2025-07-08
+
+# Fetch newsletters from the last 7 days
+npm run fetch -- --days=7
+
+# Process newsletters from a specific date
+npm run process -- --date=2025-07-08
+
+# Generate a report for today, forcing regeneration if it exists
+npm run generate-report -- --force
+
+# Send a specific report to Slack
+npm run send-report -- data/reports/report-2025-07-08.md
+```
 
 ### Notes
 
