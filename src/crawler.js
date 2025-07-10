@@ -88,7 +88,7 @@ async function isProcessed(messageId) {
 
 const GMAIL_QUERY = "in:inbox";
 
-export async function fetchLatestNewsletters({ days = 1 } = {}) {
+export async function fetchLatestNewsletters({ days = 1, date = null } = {}) {
   const auth = await authorize();
   const gmail = google.gmail({ version: "v1", auth });
   if (!auth) {
@@ -98,10 +98,28 @@ export async function fetchLatestNewsletters({ days = 1 } = {}) {
 
   // --- KST Timezone Logic with dayjs ---
   const timeZone = "Asia/Seoul";
-  const nowInKST = dayjs().tz(timeZone);
+  let startDateKST, endDateKST;
 
-  const startDateKST = nowInKST.subtract(days - 1, "day").startOf("day");
-  const endDateKST = nowInKST.endOf("day");
+  if (date) {
+    // For specific date: fetch emails from that specific day only
+    const specificDate = dayjs(date, "YYYY-MM-DD").tz(timeZone);
+    if (!specificDate.isValid()) {
+      console.error(`Invalid date format: ${date}. Please use YYYY-MM-DD format.`);
+      return [];
+    }
+    startDateKST = specificDate.startOf("day");
+    endDateKST = specificDate.endOf("day");
+  } else {
+    // For days range: use the existing logic
+    // For days=1: today only
+    // For days=2: yesterday + today
+    // For days=3: day before yesterday + yesterday + today
+    startDateKST = dayjs()
+      .tz(timeZone)
+      .subtract(days - 1, "day")
+      .startOf("day");
+    endDateKST = dayjs().tz(timeZone).endOf("day");
+  }
 
   const afterTimestamp = startDateKST.unix();
   const beforeTimestamp = endDateKST.unix();

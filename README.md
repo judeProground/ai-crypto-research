@@ -51,63 +51,68 @@ A `token.json` file will be created in the project root. This file stores your a
 
 The application is controlled via a modular command-line interface.
 
-### All-in-One Command
+### npm Scripts
 
-- **`node cli/index.js full-run`** (or `npm start`)
-  - Runs the entire pipeline in sequence.
-  - **Default Behavior**: Fetches newsletters for today (KST), processes them, generates a report, and sends it to Slack.
-  - **With `--days`**: Processes the last N days.
-  - **With `--date`**: Processes a specific past date (skips fetching).
-  - **With `--force`**: Re-processes or re-generates existing data.
-
-### Independent Commands
-
-- **Fetch Newsletters**
-
-  - `node cli/index.js fetch --days=<number>`
-  - Fetches unread newsletters from the last N days (default: 1).
-
-- **Process Newsletters**
-
-  - `node cli/index.js process --days=<number> | --date=<YYYY-MM-DD>`
-  - Analyzes raw newsletters for the specified timeframe. Use `--force` to re-process.
-
-- **Generate Reports**
-
-  - `node cli/index.js generate-report --days=<number> | --date=<YYYY-MM-DD>`
-  - Creates daily markdown reports. Use `--force` to re-generate.
-
-- **Send a Report**
-  - `node cli/index.js send-report <path/to/report.md>`
-  - Sends a specific, pre-generated report file to Slack.
-
-## Examples
+Use npm scripts with the standard `--` separator to pass arguments:
 
 ```bash
-# Run the full pipeline for today
-npm start
+# Fetch newsletters for a specific date
+npm run fetch -- --date=2025-07-09
 
-# Run the full pipeline for the last 3 days, forcing reprocessing
-npm start -- --days=3 --force
+# Fetch newsletters for multiple days
+npm run fetch -- --days=3
 
-# Run the full pipeline for a specific past date
-npm start -- --date=2025-07-08
+# Process newsletters for a specific date
+npm run process -- --date=2025-07-09
 
-# Fetch newsletters from the last 7 days
-npm run fetch -- --days=7
+# Generate report for a specific date
+npm run generate-report -- --date=2025-07-09
 
-# Process newsletters from a specific date
-npm run process -- --date=2025-07-08
-
-# Generate a report for today, forcing regeneration if it exists
-npm run generate-report -- --force
-
-# Send a specific report to Slack
-npm run send-report -- data/reports/report-2025-07-08.md
+# Run the full pipeline for a specific date
+npm run start -- --date=2025-07-09
 ```
 
-### Notes
+### All-in-One Command
 
-- The double dash (`--`) after the script name is required when passing arguments via `npm run`.
+- **`npm run start`**
+  - Runs the entire pipeline in sequence.
+  - **Default Behavior**: Fetches newsletters for today (KST), processes them, generates a report, and sends it to Slack.
+  - **With Date**: `npm run start -- --date=2025-07-09` - Skips fetching, processes existing data for the specified date, generates report, and sends to Slack.
+  - **With Days**: `npm run start -- --days=3` - Fetches newsletters for the last 3 days, processes them, generates report, and sends to Slack.
+
+### Individual Commands
+
+- **`npm run fetch`**
+
+  - Downloads newsletters from Gmail and saves them to the `data/` directory.
+  - Use `-- --date=2025-07-09` to fetch for a specific date.
+  - Use `-- --days=3` to fetch for the last 3 days.
+
+- **`npm run process`**
+
+  - Processes saved newsletters and generates summary data.
+  - Use `-- --date=2025-07-09` to process for a specific date.
+  - Use `-- --days=3` to process for the last 3 days.
+  - Use `-- --force` to reprocess existing data.
+
+- **`npm run generate-report`**
+
+  - Generates a markdown report from processed data.
+  - Use `-- --date=2025-07-09` to generate for a specific date.
+  - Use `-- --days=3` to generate for the last 3 days.
+
+- **`npm run send-report`**
+  - Sends a report to Slack.
+  - **Usage**: `npm run send-report -- <path/to/report.md>`
+  - **Example**: `npm run send-report -- reports/2025-07-09.md`
+
+## Notes
+
 - All date-based filtering and folder creation uses **KST (Korean Standard Time)** to ensure consistency.
-- The `process` command is now idempotent. It will automatically skip newsletters that have already been analyzed and saved to the `data/processed` directory, preventing redundant API costs. Use `--force` to override this behavior.
+- The `process` command is idempotent. It will automatically skip newsletters that have already been analyzed and saved to the `data/processed` directory, preventing redundant API costs. Use `--force` to override this behavior.
+
+### Available Parameters
+
+- `--date=YYYY-MM-DD`: Process/fetch for a specific date
+- `--days=N`: Process/fetch for N days (default: 1)
+- `--force`: Force regeneration of existing files

@@ -15,9 +15,14 @@ dayjs.extend(customParseFormat);
 const PROCESSED_DIR = path.join(process.cwd(), "data/processed");
 const TIME_ZONE = "Asia/Seoul";
 
-export async function fetchAndSaveNewsletters({ days = 1 } = {}) {
-  console.log(`Fetching latest newsletters for the last ${days} day(s)...`);
-  const newsletters = await fetchLatestNewsletters({ days });
+export async function fetchAndSaveNewsletters({ days = 1, date = null } = {}) {
+  if (date) {
+    console.log(`Fetching newsletters for the specific date: ${date}...`);
+  } else {
+    console.log(`Fetching latest newsletters for the last ${days} day(s)...`);
+  }
+
+  const newsletters = await fetchLatestNewsletters({ days, date });
 
   if (newsletters.length === 0) {
     console.log("No new newsletters found.");
