@@ -1,7 +1,7 @@
 [
   {
-    "title": "GENIUS Act Establishes Federal Framework for Stablecoins Alongside Bitcoin ETF and FASB Rules",
-    "summary": "The GENIUS Act creates the first federal framework for U.S. stablecoins, completing a regulatory trifecta with SEC's Bitcoin ETF approval and FASB's fair-value crypto accounting rules. This legislation legitimizes dollar-backed tokens and enables regulated entities to issue digital dollars at scale, with stablecoin issuance notably increasing since November 2024.",
+    "title": "GENIUS Act Establishes Federal Framework for US Stablecoins",
+    "summary": "The GENIUS Act creates the first federal regulatory framework for stablecoins in the US, complementing the SEC's Bitcoin ETF approval and FASB's crypto accounting rules. This regulatory trifecta is driving institutional adoption of tokenized dollars and legitimizing digital assets for corporate treasuries.",
     "categories": [
       "regulation",
       "defi"
@@ -11,6 +11,34 @@
     "additional_links": [
       "https://update.10xresearch.com/upgrade"
     ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/46e97372-887e-495c-862a-c82b328aacad/image.png?t=1752020663"
+    ],
+    "source": "10x Research <hi@update.10xresearch.com>",
+    "emailDate": "Wed, 09 Jul 2025 00:30:27 +0000 (UTC)"
+  },
+  {
+    "title": "FASB Crypto Accounting Rules Drive Corporate Treasury Adoption",
+    "summary": "The FASB issued landmark accounting standards on December 13, 2023, mandating fair value treatment for crypto assets, which took effect December 15, 2024. This regulatory clarity is triggering a wave of corporate treasury adoption heading into 2025.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": null,
+    "additional_links": [],
+    "images": [],
+    "source": "10x Research <hi@update.10xresearch.com>",
+    "emailDate": "Wed, 09 Jul 2025 00:30:27 +0000 (UTC)"
+  },
+  {
+    "title": "Stablecoin Issuance Surge Since November 2024",
+    "summary": "Stablecoin issuance has experienced notable growth since early November 2024, indicating increased market confidence and adoption. The trend suggests growing institutional interest in regulated digital dollar solutions.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": null,
+    "additional_links": [],
     "images": [
       "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/46e97372-887e-495c-862a-c82b328aacad/image.png?t=1752020663"
     ],

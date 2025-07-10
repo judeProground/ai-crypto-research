@@ -1,10 +1,10 @@
 [
   {
-    "title": "MicroStrategy Announces $4.2B Preferred Stock Sale for Bitcoin Purchases",
-    "summary": "MicroStrategy will sell up to $4.2B of its 10% Series A Perpetual Preferred Stock through an ATM program, primarily to fund more Bitcoin acquisitions. The company holds 597,325 BTC with $14.05B unrealized gains and plans to raise $84B by 2027 through its '42/42' capital plan.",
+    "title": "MicroStrategy Launches $4.2B Preferred Stock Sale for Bitcoin Acquisition",
+    "summary": "MicroStrategy announced a $4.2B sale of 10% Series A Perpetual Preferred Stock (STRD) through an ATM program, part of its '42/42' plan to raise $84B by 2027. The company holds 597,325 BTC with $14.05B unrealized gains and briefly paused purchases for the first time in three months.",
     "categories": [
       "funding",
-      "defi"
+      "regulation"
     ],
     "importance": "high",
     "primary_link": "https://www.theblock.co/post/361318/strategy-launches-strd-stock-program",
@@ -16,11 +16,10 @@
     "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
   },
   {
-    "title": "SharpLink Gaming Holds 205K ETH Worth $527M in Treasury",
-    "summary": "SharpLink Gaming disclosed holdings of 205,634 ETH valued at $527.4M, making it the second-largest ether treasury after Ethereum Foundation. The company bought 7,689 ETH for $19.7M recently and raised $64M through share sales, following a $425M private placement led by Consensys.",
+    "title": "SharpLink Gaming Builds Second-Largest ETH Treasury Worth $527M",
+    "summary": "SharpLink disclosed holdings of 205,634 ETH (~$527.4M), making it the second-largest ether treasury after the Ethereum Foundation. The company bought 7,689 ETH between June 28-July 4 and raised $64M via share sales, with Consensys CEO Joseph Lubin serving as chairman.",
     "categories": [
-      "funding",
-      "defi"
+      "funding"
     ],
     "importance": "medium",
     "primary_link": "https://www.theblock.co/post/361607/sharplink-gaming-discloses-holding-205634-eth-in-second-largest-treasury-behind-ethereum-foundation",
@@ -32,13 +31,13 @@
     "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
   },
   {
-    "title": "PumpFun's $600M Token Sale Canceled After Community Backlash",
-    "summary": "PumpFun planned to sell 150B PUMP tokens for $600M at a $4B valuation on Gate, but pulled the listing after criticism from users expecting an airdrop. The project has already generated $700M in revenue and faces competition from LetsBonk, which has surpassed it in tokens created and revenue.",
+    "title": "PumpFun's $600M Token Sale Cancelled After Community Backlash",
+    "summary": "PumpFun planned to sell 150B PUMP tokens for $600M on Gate at a $4B valuation, but pulled the listing after criticism over 'bad optics'. Users expected an airdrop given the project's $700M revenue, while competitor LetsBonk has overtaken PumpFun in tokens created and revenue.",
     "categories": [
-      "meme",
-      "defi"
+      "defi",
+      "meme"
     ],
-    "importance": "low",
+    "importance": "medium",
     "primary_link": "https://www.theblock.co/post/361654/pump-funs-token-sale-has-bad-optics-and-now-seems-in-limbo",
     "additional_links": [],
     "images": [
@@ -48,8 +47,8 @@
     "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
   },
   {
-    "title": "Phantom Wallet Integrates Perpetual Trading via Hyperliquid",
-    "summary": "Phantom is launching perpetual contract trading directly in its wallet for EU users, powered by Hyperliquid's API with up to 40x leverage. Hyperliquid has processed over $1.57T in perp trading volume and recently raised $150M at a $3B valuation.",
+    "title": "Phantom Wallet Integrates Perpetual Trading via Hyperliquid API",
+    "summary": "Phantom is launching perp contract trading directly in its wallet for EU users, offering up to 40x leverage through Hyperliquid's API. Hyperliquid has processed over $1.57T in perp volume and recently raised $150M at a $3B valuation, positioning wallets as primary hubs for onchain activity.",
     "categories": [
       "wallet",
       "defi"
@@ -64,8 +63,8 @@
     "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
   },
   {
-    "title": "New Zealand to Ban Crypto ATMs",
-    "summary": "New Zealand regulatory authorities have announced plans to ban cryptocurrency ATMs across the country. This represents a significant regulatory restriction on crypto access infrastructure in the region.",
+    "title": "New Zealand to Ban Crypto ATMs in Regulatory Crackdown",
+    "summary": "New Zealand announced plans to ban cryptocurrency ATMs as part of broader regulatory measures. This follows similar moves by other jurisdictions concerned about money laundering and consumer protection risks associated with crypto ATM operations.",
     "categories": [
       "regulation"
     ],
@@ -77,11 +76,10 @@
     "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
   },
   {
-    "title": "BlackRock's IBIT Surpasses 700,000 BTC in Assets",
-    "summary": "BlackRock's spot Bitcoin ETF (IBIT) has surpassed 700,000 BTC in assets under management. This milestone demonstrates continued institutional adoption and demand for regulated Bitcoin investment products.",
+    "title": "BlackRock's Bitcoin ETF IBIT Surpasses 700,000 BTC in Assets",
+    "summary": "BlackRock's spot Bitcoin ETF (IBIT) has exceeded 700,000 BTC in assets under management, demonstrating strong institutional demand. This milestone reinforces BlackRock's position as a dominant player in the crypto ETF market.",
     "categories": [
-      "funding",
-      "defi"
+      "funding"
     ],
     "importance": "low",
     "primary_link": "https://www.theblock.co/post/361525/blackrocks-spot-bitcoin-etf-ibit-surpasses-700000-btc-assets-under-management",
@@ -91,21 +89,8 @@
     "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
   },
   {
-    "title": "Eigen Labs Lays Off 25% of Workforce",
-    "summary": "Eigen Labs has laid off 25% of its workforce to focus resources on EigenCloud development. The restructuring reflects challenging market conditions and strategic refocusing within the restaking protocol ecosystem.",
-    "categories": [
-      "defi"
-    ],
-    "importance": "low",
-    "primary_link": "https://www.theblock.co/post/361731/eigen-layoffs",
-    "additional_links": [],
-    "images": [],
-    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
-    "emailDate": "Wed, 09 Jul 2025 14:03:51 +0000 (UTC)"
-  },
-  {
-    "title": "Two Men Charged in $650M Crypto Fraud Scheme",
-    "summary": "Two individuals have been charged in a $650 million global fraud scheme involving foreign exchange trading and cryptocurrency. The case represents one of the largest crypto-related fraud prosecutions to date.",
+    "title": "Two Men Charged in $650M Crypto and Forex Fraud Scheme",
+    "summary": "Authorities charged two individuals in a massive $650M global fraud scheme involving foreign exchange trading and cryptocurrency. The case highlights ongoing regulatory efforts to combat large-scale financial crimes in the crypto space.",
     "categories": [
       "security",
       "regulation"

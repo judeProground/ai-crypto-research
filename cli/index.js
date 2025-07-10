@@ -53,13 +53,17 @@ async function main() {
           date: argv.date,
           force: argv.force,
         });
-        await runReportGeneration({
+        const generatedReports = await runReportGeneration({
           days: argv.days ? parseInt(argv.days, 10) : 1,
           date: argv.date,
+          force: argv.force,
         });
-        // For full-run, we'll find the generated report and send it
-        // This is a simplified approach - in a real scenario you'd want to track the report path
-        console.log("Note: Manual report sending may be required after generation.");
+        // Send the generated reports to Slack
+        if (generatedReports && generatedReports.length > 0) {
+          for (const reportPath of generatedReports) {
+            await runSlackSending(reportPath);
+          }
+        }
       } else {
         await fetchAndSaveNewsletters({
           days: argv.days ? parseInt(argv.days, 10) : 1,
@@ -70,13 +74,17 @@ async function main() {
           date: argv.date,
           force: argv.force,
         });
-        await runReportGeneration({
+        const generatedReports = await runReportGeneration({
           days: argv.days ? parseInt(argv.days, 10) : 1,
           date: argv.date,
+          force: argv.force,
         });
-        // For full-run, we'll find the generated report and send it
-        // This is a simplified approach - in a real scenario you'd want to track the report path
-        console.log("Note: Manual report sending may be required after generation.");
+        // Send the generated reports to Slack
+        if (generatedReports && generatedReports.length > 0) {
+          for (const reportPath of generatedReports) {
+            await runSlackSending(reportPath);
+          }
+        }
       }
       break;
 
