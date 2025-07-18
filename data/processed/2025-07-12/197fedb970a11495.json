@@ -1,0 +1,51 @@
+[
+  {
+    "title": "RWA Market Reaches $25B with 1000x Growth Potential",
+    "summary": "Current RWA market shows $25B in assets onchain, 295k holders, $243B in stablecoins, and 171M stablecoin holders according to rwa.xyz. Authors predict 1000x growth over the next decade, comparing current state to DeFi in 2020, driven by favorable regulation and institutional adoption.",
+    "categories": [
+      "defi",
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": "http://rwa.xyz",
+    "additional_links": [],
+    "images": [],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Sat, 12 Jul 2025 13:38:12 +0000 (UTC)"
+  },
+  {
+    "title": "RedStone Oracle Network Powers Next Era of RWAs - Edge Podcast",
+    "summary": "The Edge Podcast features RedStone CoFounders discussing how their oracle network provides foundational infrastructure for RWA protocols, including stablecoins, LRTs, and Apollo's tokenized private credit through Securitize. RedStone's modular approach and RedStone Atom tool offer differentiated solutions from legacy oracles.",
+    "categories": [
+      "defi",
+      "funding"
+    ],
+    "importance": "medium",
+    "primary_link": "http://linktr.ee/edge_pod",
+    "additional_links": [
+      "http://redstone.finance",
+      "http://x.com/kuba_redstone",
+      "http://x.com/marcinredstone",
+      "https://open.spotify.com/episode/4UFnRd1RvCQPLTHoZtFbXm?si=G_Kjq8-LR0aQe5YFrSSx-Q",
+      "https://podcasts.apple.com/us/podcast/the-oracle-behind-a-new-wave-of-rwas-onchain/id1671489227?i=1000716897784",
+      "https://pods.media/edge/the-oracle-behind-a-new-wave-of-rwas-onchain",
+      "https://youtu.be/M1-2N7y3nRc",
+      "https://www.redstone.finance/",
+      "https://blog.redstone.finance/2025/06/26/real-world-assets-in-onchain-finance-report/",
+      "https://x.com/redstone_defi",
+      "https://x.com/kuba_redstone",
+      "https://x.com/marcinredstone",
+      "https://linktr.ee/edge_pod",
+      "https://www.youtube.com/@defidad",
+      "https://pods.media/edge",
+      "https://x.com/defi_dad",
+      "https://x.com/Nomaticcap"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a333c686-2ab5-459b-8e98-f2e04c54c1e5/photo_2025-05-27_14.36.41.jpeg?t=1748371006",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0b1e2835-a8ce-48b8-86d6-70d1cdce2ee9/photo_2025-06-23_11.30.35.jpeg?t=1750692695"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Sat, 12 Jul 2025 13:38:12 +0000 (UTC)"
+  }
+]

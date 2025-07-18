@@ -43,7 +43,7 @@ ${newsletterContent}
 
   try {
     const msg = await anthropic.messages.create({
-      model: "claude-opus-4-20250514",
+      model: "claude-sonnet-4-20250514",
       max_tokens: 4096,
       messages: [{ role: "user", content: prompt }],
     });
@@ -90,7 +90,7 @@ Return the report as a single block of Markdown text.`;
 
   try {
     const msg = await anthropic.messages.create({
-      model: "claude-opus-4-20250514",
+      model: "claude-sonnet-4-20250514",
       max_tokens: 2048,
       messages: [{ role: "user", content: prompt }],
     });

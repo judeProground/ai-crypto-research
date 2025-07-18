@@ -46,29 +46,13 @@ async function main() {
 
     case "full-run":
       console.log("Executing command: full-run");
-      if (argv.date) {
-        console.log(`Running for a specific date: ${argv.date}. Fetching will be skipped.`);
-        await processSavedNewsletters({
-          days: argv.days ? parseInt(argv.days, 10) : 1,
-          date: argv.date,
-          force: argv.force,
-        });
-        const generatedReports = await runReportGeneration({
-          days: argv.days ? parseInt(argv.days, 10) : 1,
-          date: argv.date,
-          force: argv.force,
-        });
-        // Send the generated reports to Slack
-        if (generatedReports && generatedReports.length > 0) {
-          for (const reportPath of generatedReports) {
-            await runSlackSending(reportPath);
-          }
-        }
-      } else {
+      try {
         await fetchAndSaveNewsletters({
           days: argv.days ? parseInt(argv.days, 10) : 1,
           date: argv.date,
+          force: argv.force,
         });
+
         await processSavedNewsletters({
           days: argv.days ? parseInt(argv.days, 10) : 1,
           date: argv.date,
@@ -85,6 +69,8 @@ async function main() {
             await runSlackSending(reportPath);
           }
         }
+      } catch (processError) {
+        console.error("Error during processing or reporting:", processError);
       }
       break;
 

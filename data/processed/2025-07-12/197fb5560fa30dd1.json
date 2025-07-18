@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Stablecoin Yields Report - Boosted Vaults Exceed 11% APY",
+    "summary": "Analysis of top-performing stablecoin vaults with minimum $1M TVL shows boosted yields ranging from 11-15% APY. Tokemak's autoDOLA pool notably achieves 11.40% APY base yield without incentives, demonstrating sustainable returns through automated rebalancing strategies.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "primary_link": "https://analytics.vaults.fyi/vaults?selectedTokens=AUSD&selectedTokens=BOLD&selectedTokens=DAI&selectedTokens=DOLA&selectedTokens=FRAX&selectedTokens=GHO&selectedTokens=GUSD&selectedTokens=LUSD&selectedTokens=MAI&selectedTokens=PYUSD&selectedTokens=RLUSD&selectedTokens=TUSD&selectedTokens=USD0&selectedTokens=USD0%2B%2B&selectedTokens=USD1&selectedTokens=USDA&selectedTokens=USDC&selectedTokens=USDC.e&selectedTokens=USDM&selectedTokens=USDP&selectedTokens=USDQ&selectedTokens=USDS&selectedTokens=USDT&selectedTokens=USDX&selectedTokens=USDbC&selectedTokens=USDe&selectedTokens=USD%E2%82%AE&selectedTokens=USD%E2%82%AE0&selectedTokens=USN&selectedTokens=USR&selectedTokens=WXDAI&selectedTokens=YUSD&selectedTokens=cUSD&selectedTokens=crvUSD&selectedTokens=eUSD&selectedTokens=eUSDe&selectedTokens=lvlUSD&selectedTokens=mkUSD&selectedTokens=rUSD&selectedTokens=sBOLD&selectedTokens=sDAI&selectedTokens=sDOLA&selectedTokens=sUSD&selectedTokens=sUSDC&selectedTokens=sUSDS&selectedTokens=sUSDe&selectedTokens=sUSDf&selectedTokens=srUSD&selectedTokens=verUSDC&selectedTokens=wM&selectedTokens=wUSDL&selectedTokens=wstUSR&tvlLowerBound=1000000&excludeRewards=false",
+    "additional_links": [
+      "https://app.tokemak.xyz/pools/autoDOLA"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/d1178989-c9ac-4e2d-843b-32dddb732139/image.png?t=1752259061",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2c412007-e070-4f9d-917d-dbdb66594b17/Screenshot_2025-07-11_115215.png?t=1752260157"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 11 Jul 2025 21:12:44 +0000 (UTC)"
+  },
+  {
+    "title": "ETH and BTC Yield Opportunities - Boosted Vaults Analysis",
+    "summary": "ETH vaults with $1M+ TVL show boosted yields in competitive ranges, while BTC yields remain scarce but improving. Notable opportunities include Avant's avBTC yielding 5.21% APY and Artemis Finance offering 117.39% APR on GOAT staking with 29.48% real BTC yield.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://analytics.vaults.fyi/vaults?selectedTokens=ETH&selectedTokens=WETH&selectedTokens=agETH&selectedTokens=cbETH&selectedTokens=ezETH&selectedTokens=frxETH&selectedTokens=mETH&selectedTokens=msETH&selectedTokens=pufETH&selectedTokens=pxETH&selectedTokens=rETH&selectedTokens=rsETH&selectedTokens=rswETH&selectedTokens=stETH&selectedTokens=swETH&selectedTokens=tETH&selectedTokens=weETH&selectedTokens=weETHs&selectedTokens=wstETH&selectedTokens=wsuperOETHb&selectedTokens=ynETHx&selectedTokens=ETHx&selectedTokens=osETH&selectedTokens=yETH&tvlLowerBound=1000000",
+    "additional_links": [
+      "https://analytics.vaults.fyi/vaults?tvlLowerBound=1000000&selectedTokens=agETH&selectedTokens=mETH&selectedTokens=weETHs&selectedTokens=ETHx&selectedTokens=BTCB&selectedTokens=LBTC&selectedTokens=SolvBTC&selectedTokens=WBTC&selectedTokens=cbBTC&selectedTokens=eBTC&selectedTokens=tBTC",
+      "https://app.avantprotocol.com/products",
+      "https://artemisfinance.io/stake-goat",
+      "https://www.the-edge.xyz/p/the-rise-of-managed-strategies-onchain",
+      "https://twitter.com/GOATRollup/status/1942267858282541164"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2ea8beaa-21b2-4186-88ed-f19ccaafb879/image.png?t=1752265348",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/29ee9de4-77db-4133-a7f7-ce8f29fdfeb0/Screenshot_2025-07-11_133210.png?t=1752265945",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6bb6a388-6cdb-4c18-a8b2-3ad6ba692842/Screenshot_2025-07-11_123220.png?t=1752262603",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/96f94ff7-8071-41bc-96e0-bfa3e4a694e9/Screenshot_2025-07-11_124604.png?t=1752263332"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 11 Jul 2025 21:12:44 +0000 (UTC)"
+  },
+  {
+    "title": "Liminal Protocol - Delta Neutral Yield Strategy",
+    "summary": "Liminal Money introduces delta-neutral yield farming for blue-chip assets including HYPE and BTC, offering real yields without incentives. The protocol enables creative exposure strategies for upcoming airdrops like Hyperunit through sophisticated position management.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "primary_link": "https://liminal.money/app",
+    "additional_links": [
+      "https://twitter.com/SKYTONET_/status/1940161274639159501"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/ea3fec48-6cf1-49f7-b7a3-ea2e1d03e14e/Screenshot_2025-07-04_130719.png?t=1751661362",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/ca91195e-5ab0-4adb-b5f9-30b3ab42e4e2/Screenshot_2025-07-04_133957.png?t=1751661613",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/f09c944c-4c3d-467e-9429-21e0aaa66538/image.png?t=1751664046"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 11 Jul 2025 21:12:44 +0000 (UTC)"
+  },
+  {
+    "title": "Pendle Yield Trading Markets Overview",
+    "summary": "Pendle's yield markets show stablecoins ranging 12.9-15.49%, BTC at 1.52-3.47%, and ETH at 3.98-5.91% yields. The platform continues to dominate yield tokenization with consistent liquidity across major asset classes.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "primary_link": "https://www.pendle.finance/",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4070a6a0-e87a-4d84-a57b-cc48c2c10634/Screenshot_2025-07-11_134029.png?t=1752266495",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/ca49bc35-f83d-4ef7-8f99-0d3bc8903bc2/Screenshot_2025-07-11_134053.png?t=1752266515",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/fd45307f-c135-4d7b-af53-38b5a755f9ed/Screenshot_2025-07-11_134111.png?t=1752266530"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 11 Jul 2025 21:12:44 +0000 (UTC)"
+  },
+  {
+    "title": "Rumpel Protocol - Real-Time Points to Yield Conversion",
+    "summary": "Rumpel enables 47% APY on sUSDe/GHO stable positions through Fluid integration and real-time points streaming. The protocol converts Ethena points to yield immediately, eliminating traditional 3-6 month waiting periods for point redemption.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.app.rumpel.xyz/",
+    "additional_links": [
+      "https://twitter.com/RumpelLabs/status/1942222182236717318"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3a670559-25b7-4e0d-b0f6-8d7267cae1b4/image.png?t=1752261649",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/63259907-acef-4995-99cc-90f3b9adb31b/Screenshot_2025-07-11_122321.png?t=1752261824"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 11 Jul 2025 21:12:44 +0000 (UTC)"
+  },
+  {
+    "title": "Gearbox Protocol Slippage Optimization for Leverage Looping",
+    "summary": "Gearbox highlights critical slippage considerations in leverage looping strategies that significantly impact profitability. The protocol is implementing improvements to reduce slippage costs, which can substantially affect returns in leveraged yield farming positions.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "primary_link": "https://twitter.com/GearboxProtocol/status/1943385339537568179",
+    "additional_links": [],
+    "images": [],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 11 Jul 2025 21:12:44 +0000 (UTC)"
+  }
+]
