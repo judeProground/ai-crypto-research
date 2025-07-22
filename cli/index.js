@@ -29,6 +29,7 @@ async function main() {
       await runReportGeneration({
         days: argv.days ? parseInt(argv.days, 10) : 1,
         date: argv.date,
+        force: argv.force,
       });
       break;
 

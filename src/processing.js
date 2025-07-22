@@ -1,5 +1,5 @@
 import { fetchLatestNewsletters } from "./crawler.js";
-import { processNewsletter } from "./llm.js";
+import { processNewsletter, batchProcessNewsletters } from "./llm.js";
 import fs from "fs/promises";
 import path from "path";
 import "dotenv/config";
@@ -76,6 +76,10 @@ export async function processSavedNewsletters({ days = 1, date = null, force = f
     for (const folder of foldersToProcess) {
       const folderPath = path.join(rawDir, folder);
       const files = await fs.readdir(folderPath);
+      
+      // Collect newsletters to batch process
+      const newslettersToProcess = [];
+      const processedFilePaths = [];
 
       for (const file of files) {
         if (path.extname(file) !== ".json") continue;
@@ -97,26 +101,78 @@ export async function processSavedNewsletters({ days = 1, date = null, force = f
 
         const content = await fs.readFile(rawFilePath, "utf-8");
         const newsletter = JSON.parse(content);
+        
+        newslettersToProcess.push(newsletter);
+        processedFilePaths.push(processedFilePath);
+      }
 
-        console.log(`\nProcessing email: "${newsletter.subject}"`);
-        const analyzedArticles = await processNewsletter(newsletter.body);
+      if (newslettersToProcess.length === 0) {
+        console.log(`No new newsletters to process in ${folder}`);
+        continue;
+      }
 
-        if (analyzedArticles.length > 0) {
-          const articlesWithExtras = analyzedArticles.map((article) => ({
-            ...article,
-            source: newsletter.from,
-            emailDate: newsletter.date,
-          }));
+      console.log(`\nBatch processing ${newslettersToProcess.length} newsletters for ${folder}...`);
+      
+      try {
+        // Use batch processing for cost efficiency
+        const batchResults = await batchProcessNewsletters(newslettersToProcess);
+        
+        // Save results for each newsletter
+        for (let i = 0; i < newslettersToProcess.length; i++) {
+          const newsletter = newslettersToProcess[i];
+          const processedFilePath = processedFilePaths[i];
+          const analyzedArticles = batchResults[newsletter.id] || [];
 
-          const outputDir = path.join(PROCESSED_DIR, folder);
-          await fs.mkdir(outputDir, { recursive: true });
-          await fs.writeFile(processedFilePath, JSON.stringify(articlesWithExtras, null, 2));
-          console.log(
-            `-> Successfully analyzed and saved ${articlesWithExtras.length} articles to ${processedFilePath}`
-          );
-          totalProcessed++;
-        } else {
-          console.log(`-> No articles found or error during processing for this email.`);
+          if (analyzedArticles.length > 0) {
+            const articlesWithExtras = analyzedArticles.map((article) => ({
+              ...article,
+              source: newsletter.from,
+              emailDate: newsletter.date,
+            }));
+
+            const outputDir = path.join(PROCESSED_DIR, folder);
+            await fs.mkdir(outputDir, { recursive: true });
+            await fs.writeFile(processedFilePath, JSON.stringify(articlesWithExtras, null, 2));
+            console.log(
+              `-> Successfully saved ${articlesWithExtras.length} articles from "${newsletter.subject}"`
+            );
+            totalProcessed++;
+          } else {
+            console.log(`-> No articles found for "${newsletter.subject}"`);
+          }
+        }
+      } catch (error) {
+        console.error(`Batch processing failed for ${folder}, falling back to individual processing:`, error);
+        
+        // Fallback to individual processing
+        for (let i = 0; i < newslettersToProcess.length; i++) {
+          const newsletter = newslettersToProcess[i];
+          const processedFilePath = processedFilePaths[i];
+          
+          try {
+            console.log(`Processing email individually: "${newsletter.subject}"`);
+            const analyzedArticles = await processNewsletter(newsletter.body);
+
+            if (analyzedArticles.length > 0) {
+              const articlesWithExtras = analyzedArticles.map((article) => ({
+                ...article,
+                source: newsletter.from,
+                emailDate: newsletter.date,
+              }));
+
+              const outputDir = path.join(PROCESSED_DIR, folder);
+              await fs.mkdir(outputDir, { recursive: true });
+              await fs.writeFile(processedFilePath, JSON.stringify(articlesWithExtras, null, 2));
+              console.log(
+                `-> Successfully analyzed and saved ${articlesWithExtras.length} articles individually`
+              );
+              totalProcessed++;
+            } else {
+              console.log(`-> No articles found for this email.`);
+            }
+          } catch (individualError) {
+            console.error(`Failed to process "${newsletter.subject}":`, individualError);
+          }
         }
       }
     }
