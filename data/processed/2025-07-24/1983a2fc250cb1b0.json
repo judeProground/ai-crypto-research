@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Union Protocol Builds Trustless Cross-Chain Infrastructure with ZK Proofs",
+    "summary": "Interview with Union founder Karel discussing their approach to building mathematically secure, trustless bridge protocols using zero-knowledge proofs. Union aims to solve cross-chain vulnerabilities through innovative ZK-based architecture rather than traditional bridge designs.",
+    "categories": [
+      "defi",
+      "security"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.prestolabs.io/research/karel-union-zk-interoperability-and-trustlessness",
+    "additional_links": [
+      "https://presto.beehiiv.com/subscribe",
+      "https://t.me/presto_research"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0c82a0d0-4f96-4465-8459-0f5c7efc3fe9/250722_Interview_article_docs_cover_thumbnail.png?t=1753322793"
+    ],
+    "source": "Presto Research <no-reply@mail.prestolabs.io>",
+    "emailDate": "Thu, 24 Jul 2025 02:07:44 +0000 (UTC)"
+  }
+]

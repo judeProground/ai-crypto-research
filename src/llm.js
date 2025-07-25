@@ -31,7 +31,7 @@ Then, for each identified article, create a structured analysis in a JSON object
 Follow these rules exactly:
 - "title": Create a concise, descriptive title for the specific article.
 - "summary": Provide an expert-level summary, including specific details and context. The summary must be 2-3 lines long.
-- "categories": An array of strings. Choose from: [defi, security, regulation, wallet, funding, meme]. Suggest a new lowercase category if needed.
+- "categories": An array of strings. Choose from: [defi, security, regulation, wallet, funding, meme, general, market, institutional]. Suggest a new lowercase category if needed.
 - "importance": Assign importance based on these criteria. Pay close attention to monetary values, scale of impact, and direct investment opportunities.
     - "fatal": Critical, widespread vulnerability; major hack (> $50M); major exchange insolvency or shutdown.
     - "high": Significant new vulnerability; notable hack ($5M - $50M); major regulatory action by a large governing body; new widespread scam affecting many users.
@@ -191,7 +191,7 @@ For each article, create a structured analysis with these keys: "title", "summar
 Follow these rules exactly:
 - "title": Create a concise, descriptive title for the specific article.
 - "summary": Provide an expert-level summary, including specific details and context. The summary must be 2-3 lines long.
-- "categories": An array of strings. Choose from: [defi, security, regulation, wallet, funding, meme]. Suggest a new lowercase category if needed.
+- "categories": An array of strings. Choose from: [defi, security, regulation, wallet, funding, meme, general, market, institutional]. Suggest a new lowercase category if needed.
 - "importance": Assign importance based on these criteria. Pay close attention to monetary values, scale of impact, and direct investment opportunities.
     - "fatal": Critical, widespread vulnerability; major hack (> $50M); major exchange insolvency or shutdown.
     - "high": Significant new vulnerability; notable hack ($5M - $50M); major regulatory action by a large governing body; new widespread scam affecting many users.

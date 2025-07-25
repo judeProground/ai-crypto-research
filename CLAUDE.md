@@ -63,7 +63,7 @@ node cli/index.js send-report data/reports/report-2025-07-09.md
   source: "",          // Email sender (e.g., "10x Research <hi@update.10xresearch.com>")
   title: "",           // Article title
   summary: "",         // AI-generated 2-3 line summary
-  categories: [],      // ['defi', 'funding', 'security', 'regulation', etc.]
+  categories: [],      // ['defi', 'funding', 'security', 'regulation', 'general', 'market', 'institutional', etc.]
   importance: "",      // 'fatal', 'high', 'medium', 'low'
   primary_link: "",    // Main article URL
   additional_links: [], // Array of related/supporting URLs

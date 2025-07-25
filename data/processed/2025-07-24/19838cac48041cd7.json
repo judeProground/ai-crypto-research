@@ -1,0 +1,50 @@
+[
+  {
+    "title": "XRP Market Cap Surpasses Major Corporations",
+    "summary": "XRP's market capitalization briefly reached $203 billion, temporarily exceeding PepsiCo, Uber, and BlackRock before falling back to $191 billion. Analysts warn of potential volatility in the frothy altcoin market despite strong year-end prospects for major cryptocurrencies.",
+    "categories": [
+      "market"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/331388/xrp-now-larger-than-pepsico-uber-blackrock-and-is-closing-in-on-mcdonalds",
+    "additional_links": [
+      "https://decrypt.co/331397/why-ethereum-keep-climbing-coming-months-bitwise",
+      "https://decrypt.co/331435/are-things-getting-too-frothy-ethereum-xrp-altcoins",
+      "https://decrypt.co/331421/mara-stock-dives-bitcoin-miner-reveals-plan-raise-850-million-buy-more-btc",
+      "https://decrypt.co/331407/goldman-sachs-bny-mellon-tokenized-money-market-product"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3a7eaca9-4533-4930-8063-6c6d88709e41/Daily_dispatch.png?t=1740415446",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/de5fdee9-bb43-4c49-8c4c-991ed127d740/Primary_logo_-_pink.png?t=1747061150"
+    ],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Wed, 23 Jul 2025 19:37:48 +0000 (UTC)"
+  },
+  {
+    "title": "MARA Bitcoin Miner Plans $850M Capital Raise",
+    "summary": "Marathon Digital Holdings (MARA) stock declined after announcing plans to raise $850 million to purchase additional Bitcoin. This represents a significant capital commitment by one of the largest public Bitcoin mining companies to expand their BTC holdings.",
+    "categories": [
+      "funding"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/331421/mara-stock-dives-bitcoin-miner-reveals-plan-raise-850-million-buy-more-btc",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Wed, 23 Jul 2025 19:37:48 +0000 (UTC)"
+  },
+  {
+    "title": "Goldman Sachs and BNY Mellon Launch Tokenized Money Market Product",
+    "summary": "Major financial institutions Goldman Sachs and BNY Mellon are collaborating on a tokenized money market product, marking another significant step by traditional finance into blockchain-based financial instruments and demonstrating institutional adoption of tokenization.",
+    "categories": [
+      "defi",
+      "institutional"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/331407/goldman-sachs-bny-mellon-tokenized-money-market-product",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Wed, 23 Jul 2025 19:37:48 +0000 (UTC)"
+  }
+]

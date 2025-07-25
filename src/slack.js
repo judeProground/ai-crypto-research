@@ -26,6 +26,9 @@ const categoryEmojis = {
   trading: "📈",
   security: "🛡️",
   wallet: "👛",
+  general: "🏷️",
+  market: "📊",
+  institutional: "🏢",
 };
 
 /**

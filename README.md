@@ -116,3 +116,22 @@ npm run start -- --date=2025-07-09
 - `--date=YYYY-MM-DD`: Process/fetch for a specific date
 - `--days=N`: Process/fetch for N days (default: 1)
 - `--force`: Force regeneration of existing files
+
+## Article Categories
+
+The AI analyzer categorizes articles into the following predefined categories:
+
+| Category | Emoji | Description |
+|----------|-------|-------------|
+| `defi` | ⚡ | Decentralized Finance protocols, yield farming, liquidity |
+| `security` | 🛡️ | Security vulnerabilities, exploits, audits |
+| `regulation` | 🏛️ | Government regulations, policy changes, compliance |
+| `wallet` | 👛 | Wallet software, custody solutions, security |
+| `funding` | 💰 | Investment rounds, fundraising, venture capital |
+| `meme` | 🎭 | Meme coins, community-driven projects |
+| `trading` | 📈 | Trading strategies, market analysis, technical analysis |
+| `general` | 🏷️ | General content, newsletters, educational resources |
+| `market` | 📊 | Market analysis, price movements, technical indicators |
+| `institutional` | 🏢 | Traditional finance adoption, corporate involvement |
+
+Categories are automatically assigned during AI analysis and displayed with corresponding emojis in Slack reports.
