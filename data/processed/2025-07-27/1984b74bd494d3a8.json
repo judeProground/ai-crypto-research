@@ -1,0 +1,55 @@
+[
+  {
+    "title": "MegaETH Partners with Cap Stablecoin to Integrate USDC Minting",
+    "summary": "MegaETH DeFi and Cap Stablecoin announced USDC integration into Cap Stablecoin Network (CSN), enabling 1:1 cUSD minting and seamless swapping across CSN dollar assets. The integration is powered by Aave and managed by Yearn vaults for yield generation, following their recent PayPal partnership.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": null,
+    "additional_links": [],
+    "images": [],
+    "source": "Crypto Integrated <salazarslytherin@substack.com>",
+    "emailDate": "Sun, 27 Jul 2025 10:36:28 +0000"
+  },
+  {
+    "title": "BOB Becomes Hybrid zk Rollup with RiscZero and Boundless Partnership",
+    "summary": "BOB evolved into a hybrid zk rollup combining zk finality with optimistic rollup efficiency through partnerships with RiscZero and Boundless for zk fraud proofs and rollup infrastructure. This advancement moved BOB to Stage 0 on L2Beat ahead of its upcoming Security Council launch.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": null,
+    "additional_links": [],
+    "images": [],
+    "source": "Crypto Integrated <salazarslytherin@substack.com>",
+    "emailDate": "Sun, 27 Jul 2025 10:36:28 +0000"
+  },
+  {
+    "title": "US Government Considers Charges Against Dragonfly VC Over Tornado Cash Investment",
+    "summary": "The US government is reportedly considering criminal charges against Dragonfly VC for investing in developers behind Tornado Cash mixer protocol. The potential charges stem from Dragonfly's August 2020 investment in PepperSec Inc, highlighting regulatory risks for VCs investing in privacy-focused crypto projects.",
+    "categories": [
+      "regulation",
+      "funding"
+    ],
+    "importance": "high",
+    "primary_link": null,
+    "additional_links": [],
+    "images": [],
+    "source": "Crypto Integrated <salazarslytherin@substack.com>",
+    "emailDate": "Sun, 27 Jul 2025 10:36:28 +0000"
+  },
+  {
+    "title": "Eigen Labs Launches Multi-Chain Verification on Base Sepolia",
+    "summary": "Eigen Labs released Multi-Chain Verification (ELIP-008) in public preview on Base Sepolia, enabling AVSs to deploy beyond Ethereum L1 with streamlined integration and reduced costs. The mainnet rollout is planned next, expanding EigenLayer's restaking capabilities across multiple blockchain networks.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": null,
+    "additional_links": [],
+    "images": [],
+    "source": "Crypto Integrated <salazarslytherin@substack.com>",
+    "emailDate": "Sun, 27 Jul 2025 10:36:28 +0000"
+  }
+]

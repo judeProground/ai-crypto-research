@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Weekly DeFi Yield Opportunities Analysis - July 26-Aug 1 2025",
+    "summary": "Comprehensive analysis of top DeFi yields across stablecoins, ETH, and BTC markets. Highlights include Avant Protocol's new avUSDx junior tranche yielding 50% APY and Hyperbeat's USDT vault maintaining ~17% APY with over $90M TVL.",
+    "categories": [
+      "defi",
+      "general"
+    ],
+    "importance": "low",
+    "primary_link": "https://www.the-edge.xyz/p/yields-of-the-week-july-26-august-1-2025",
+    "additional_links": [
+      "https://app.avantprotocol.com/products",
+      "https://app.hyperbeat.org/vaults/usdt",
+      "https://app.maple.finance/earn?referral=Mig0gHP59IYC"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/97386b7f-2ff9-43bd-a115-b42496141253/Untitled__1200_x_630_px___1_.png?t=1751470041",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0d982892-4101-4438-b742-693b83748542/photo_2025-07-31_20-22-52.jpg?t=1754019373"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 01 Aug 2025 16:33:42 +0000 (UTC)"
+  },
+  {
+    "title": "HyperEVM DeFi Strategy and Pendle Yield Trading Opportunities",
+    "summary": "Detailed strategy for earning yield on HyperEVM through Kinetiq staking, Felix leveraging, and Hyperbeat deposits. New Pendle markets for kHYPE and liquidHYPE offer yield trading opportunities with front-loaded rewards for early participants.",
+    "categories": [
+      "defi",
+      "trading"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.pendle.finance/",
+    "additional_links": [
+      "https://kinetiq.xyz/",
+      "https://www.usefelix.xyz/",
+      "https://app.hyperbeat.org/vaults/usdt"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/94b81997-a6c6-445f-8702-dd562899bc2d/GxGp01YasAAHX2o.jpg?t=1754005586"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 01 Aug 2025 16:33:42 +0000 (UTC)"
+  },
+  {
+    "title": "High-Yield Leverage Products on Gearbox and Falcon Finance",
+    "summary": "Gearbox partnership with Falcon Finance offers leveraged yield opportunities ranging from 73% to 163% APR. Ethena and Aave collaboration introduces Liquid Leverage product targeting 49.89% APR through sophisticated looping strategies.",
+    "categories": [
+      "defi",
+      "leverage"
+    ],
+    "importance": "medium",
+    "primary_link": "https://app.falcon.finance?r=0ec4ccafcd94a7756710278ebfd7dd4b",
+    "additional_links": [
+      "https://gearbox.fi/"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/88f0f339-329c-4ee8-9a17-6d698c6688de/GxB7l7WbEAAlfZj.jpg?t=1753998225"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 01 Aug 2025 16:33:42 +0000 (UTC)"
+  }
+]

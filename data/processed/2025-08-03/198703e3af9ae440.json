@@ -1,0 +1,48 @@
+[
+  {
+    "title": "White House Proposes National Crypto Reserve Including Bitcoin and Ethereum",
+    "summary": "The White House released a comprehensive crypto report proposing a strategic US crypto reserve including Bitcoin, Ethereum, XRP, Solana, and Cardano funded through forfeiture proceedings. The plan also recommends self-custody rights, expanded CFTC oversight, and clear regulatory framework for the crypto industry.",
+    "categories": [
+      "regulation",
+      "institutional"
+    ],
+    "importance": "fatal",
+    "primary_link": "https://www.theblock.co/post/363994/white-houses-working-group-releases-lengthy-crypto-report-including-legislative-proposals-crypto-stockpile-details",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6fbc9ab2-2303-421f-9926-836633e78072/image.png?t=1740314845",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e5a37534-6d11-4dca-9872-c8baebf4e9ee/Screen_Shot_2025-08-03_at_19.50.28.png?t=1754225438"
+    ],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 03 Aug 2025 14:03:02 +0000 (UTC)"
+  },
+  {
+    "title": "GENIUS Act Establishes Federal Framework for Stablecoins",
+    "summary": "The GENIUS Act creates strict federal requirements for fiat-backed stablecoins including full asset backing, federal licensing, and independent reserve audits while banning yield-bearing stablecoins. Industry experts note this provides institutional clarity but could significantly alter DeFi dynamics by limiting passive income options.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "high",
+    "primary_link": "https://cointelegraph.com/news/the-state-of-stablecoins-after-genius-act-expert-weighs-in",
+    "additional_links": [],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 03 Aug 2025 14:03:02 +0000 (UTC)"
+  },
+  {
+    "title": "SEC Chair Launches Project Crypto Initiative",
+    "summary": "SEC Chair Atkins debuted 'Project Crypto' to update rules and regulations with focus on onchain activities while approving in-kind redemptions for Bitcoin and Ethereum ETFs. The initiative signals a more crypto-friendly regulatory approach under the new administration.",
+    "categories": [
+      "regulation"
+    ],
+    "importance": "high",
+    "primary_link": null,
+    "additional_links": [
+      "https://x.com/jchervinsky/status/1951276955401142667"
+    ],
+    "images": [],
+    "source": "\"Launchy 🤹\" <launchy@mail.beehiiv.com>",
+    "emailDate": "Sun, 03 Aug 2025 14:03:02 +0000 (UTC)"
+  }
+]

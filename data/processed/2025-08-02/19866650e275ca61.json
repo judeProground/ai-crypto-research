@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Bitcoin and Crypto Market Correction Driven by Tariffs and Jobs Data",
+    "summary": "Bitcoin fell to its lowest price in weeks following Trump's new tariff announcements and poor jobs report, with BTC down 3% and altcoins performing worse. CryptoQuant analysts expect the correction could last months as whales and miners take profits, though Fed rate cut optimism may provide support.",
+    "categories": [
+      "market",
+      "regulation"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/333158/bitcoin-ethereum-sink-tariff-gloom-rate-optimism",
+    "additional_links": [
+      "https://decrypt.co/333081/bitcoin-correction-more-downside-likely-cryptoquant",
+      "https://decrypt.co/333090/solana-xrp-dogecoin-extend-losses"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3a7eaca9-4533-4930-8063-6c6d88709e41/Daily_dispatch.png?t=1740415446"
+    ],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Fri, 01 Aug 2025 16:09:15 +0000 (UTC)"
+  },
+  {
+    "title": "Coinbase Stock Plunges 15% After Q2 Earnings Miss",
+    "summary": "Coinbase shares dropped 15% following disappointing Q2 earnings results that missed revenue forecasts. The stock decline coincided with broader crypto market weakness as Bitcoin and altcoins posted significant losses.",
+    "categories": [
+      "market",
+      "institutional"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/333038/coinbase-stock-dives-company-q2-revenue-forecasts",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Fri, 01 Aug 2025 16:09:15 +0000 (UTC)"
+  },
+  {
+    "title": "Metaplanet Plans $3.7B Stock Raise for Bitcoin Buying Spree",
+    "summary": "Japanese investment firm Metaplanet announced plans for a massive $3.7 billion stock raise specifically to fund Bitcoin purchases. This represents one of the largest corporate Bitcoin acquisition strategies announced to date.",
+    "categories": [
+      "institutional",
+      "funding"
+    ],
+    "importance": "high",
+    "primary_link": "https://decrypt.co/333132/metaplanet-plans-3-7b-stock-raise-to-fuel-massive-bitcoin-buying-spree",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Fri, 01 Aug 2025 16:09:15 +0000 (UTC)"
+  },
+  {
+    "title": "FDIC Accused of Stonewalling Operation Chokepoint 2.0 Documents",
+    "summary": "Coinbase Chief Legal Officer Paul Grewal claims FDIC staff continue to obstruct efforts to obtain documents related to Operation Chokepoint 2.0 crypto debanking practices. The accusation highlights ongoing tensions between crypto companies and federal banking regulators.",
+    "categories": [
+      "regulation",
+      "institutional"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/333110/fdic-still-trying-to-stonewall-crypto-debanking-documents-says-coinbase-legal-chief",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Fri, 01 Aug 2025 16:09:15 +0000 (UTC)"
+  }
+]

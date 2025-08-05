@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Weekly DeFi Yield Analysis: Stablecoin, ETH, and BTC Vault Performance",
+    "summary": "Comprehensive analysis of top-performing DeFi vaults across stablecoins, ETH, and BTC with minimum $10M TVL, focusing on 7-day average non-boosted yields. Highlights Hyperbeat's USDT vault yielding ~20% APY and various vault opportunities tracked through Vaults.fyi analytics platform.",
+    "categories": [
+      "defi",
+      "market"
+    ],
+    "importance": "low",
+    "primary_link": "https://analytics.vaults.fyi/vaults?selectedTokens=AUSD&selectedTokens=BOLD&selectedTokens=DAI&selectedTokens=DOLA&selectedTokens=FRAX&selectedTokens=GHO&selectedTokens=GUSD&selectedTokens=LUSD&selectedTokens=MAI&selectedTokens=PYUSD&selectedTokens=RLUSD&selectedTokens=TUSD&selectedTokens=USD0&selectedTokens=USD0%2B%2B&selectedTokens=USD1&selectedTokens=USDA&selectedTokens=USDC&selectedTokens=USDC.e&selectedTokens=USDM&selectedTokens=USDP&selectedTokens=USDQ&selectedTokens=USDS&selectedTokens=USDT&selectedTokens=USDX&selectedTokens=USDbC&selectedTokens=USDe&selectedTokens=USD%E2%82%AE&selectedTokens=USD%E2%82%AE0&selectedTokens=USN&selectedTokens=USR&selectedTokens=WXDAI&selectedTokens=YU&selectedTokens=YUSD&selectedTokens=cUSD&selectedTokens=crvUSD&selectedTokens=eUSD&selectedTokens=eUSDe&selectedTokens=lvlUSD&selectedTokens=mkUSD&selectedTokens=rUSD&selectedTokens=sBOLD&selectedTokens=sDAI&selectedTokens=sDOLA&selectedTokens=sUSD&selectedTokens=sUSDC&selectedTokens=sUSDS&selectedTokens=sUSDX&selectedTokens=sUSDe&selectedTokens=sUSDf&selectedTokens=srUSD&selectedTokens=verUSDC&selectedTokens=wM&selectedTokens=wUSDL&selectedTokens=wstUSR&tvlLowerBound=10000000&excludeRewards=true&apyMode=7day",
+    "additional_links": [
+      "https://app.hyperbeat.org/vaults/usdt",
+      "https://analytics.vaults.fyi/vaults?selectedTokens=ETH&selectedTokens=WETH&selectedTokens=agETH&selectedTokens=cbETH&selectedTokens=ezETH&selectedTokens=frxETH&selectedTokens=mETH&selectedTokens=msETH&selectedTokens=pufETH&selectedTokens=pxETH&selectedTokens=rETH&selectedTokens=rsETH&selectedTokens=rswETH&selectedTokens=stETH&selectedTokens=swETH&selectedTokens=tETH&selectedTokens=weETH&selectedTokens=weETHs&selectedTokens=wstETH&selectedTokens=wsuperOETHb&selectedTokens=ynETHx&selectedTokens=ETHx&selectedTokens=osETH&selectedTokens=yETH&tvlLowerBound=10000000&excludeRewards=true"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/42841cfc-5e65-49e8-ab9f-9d40d3a961cf/Screenshot_2025-07-24_131001.png?t=1753387831",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/61d103c5-069d-4570-88a1-5fbe79deffbc/image.png?t=1753412529",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/11454e9e-9aa4-48a7-a379-3479ce2193c2/Screenshot_2025-07-24_131533.png?t=1753388159"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 25 Jul 2025 11:33:47 +0000 (UTC)"
+  },
+  {
+    "title": "HyperEVM DeFi Strategy: kHYPE Staking and Leveraged Yield Farming",
+    "summary": "Detailed walkthrough of HyperEVM ecosystem strategy involving Kinetiq's kHYPE staking (2.11% yield), Felix lending protocol (12% borrow rate), and Veda vault farming (6% APY plus airdrops). Also covers Hyperbeat's beHYPE vault partnership with Ether.fi, currently at ~$35M TVL with $100M cap.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "low",
+    "primary_link": "https://kinetiq.xyz/",
+    "additional_links": [
+      "https://www.usefelix.xyz/",
+      "https://app.hyperbeat.org/earn"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/8ee5f0e2-27e1-497a-be2f-e13323f6f52e/Screenshot_2025-07-24_200730.png?t=1753412871"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 25 Jul 2025 11:33:47 +0000 (UTC)"
+  },
+  {
+    "title": "Pendle Yield Trading Analysis: siUSD YT Opportunity with Infinifi Protocol",
+    "summary": "Analysis of newly listed siUSD YT/PT on Pendle from Infinifi protocol, highlighting potential yield increase from 9.6% to 12%+ as $30M+ TVL rolls over to higher-yielding Ethena PT assets between July 30th-August 14th. Current YT pricing may not reflect upcoming yield improvements.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.pendle.finance/",
+    "additional_links": [
+      "https://infinifi.xyz?ref=DEFIDAD"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/71df79b4-e2e9-4709-9fa1-2a183902e21b/Screenshot_2025-07-24_202226.png?t=1753414101",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/49aa37c7-709f-4404-91e0-ee0f8e0c8289/Screenshot_2025-07-24_203352.png?t=1753414644"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 25 Jul 2025 11:33:47 +0000 (UTC)"
+  },
+  {
+    "title": "Leverage Looping Strategy: Rumpel x Fluid Protocol Yields Up to 74.79% APY",
+    "summary": "Detailed analysis of leveraged yield farming using Rumpel and Fluid protocols, converting Ethena points to USDC yield. Strategy involves sUSDe x GHO loops achieving 64.49% APY on Fluid alone, increasing to 74.79% APY when routed through Rumpel for immediate yield conversion versus waiting for point redemption.",
+    "categories": [
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://www.rumpel.xyz/",
+    "additional_links": [
+      "https://fluid.io/dashboard/1"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2a92a442-41fb-4ea3-84eb-421b92fee2c2/Screenshot_2025-07-24_184648.png?t=1753408021",
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/f75735b4-d1ff-470d-8ab2-503403631086/Screenshot_2025-07-24_182957.png?t=1753408239"
+    ],
+    "source": "The Edge Newsletter <hi@the-edge.xyz>",
+    "emailDate": "Fri, 25 Jul 2025 11:33:47 +0000 (UTC)"
+  }
+]

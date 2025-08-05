@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Bitcoin Recovery at Risk Amid Mounting Macroeconomic Pressures",
+    "summary": "Despite Bitcoin recovering some weekend losses, experts warn the recovery may be short-lived due to overexposed US equity markets and recent macroeconomic data creating market uncertainty. Some analysts predict 'chopsolidation' and sideways trading rather than dramatic crashes while markets await potential Fed rate cuts.",
+    "categories": [
+      "market",
+      "institutional"
+    ],
+    "importance": "low",
+    "primary_link": "https://decrypt.co/333373/bitcoin-recovery-at-risk-amid-macro-headwinds",
+    "additional_links": [],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3a7eaca9-4533-4930-8063-6c6d88709e41/Daily_dispatch.png?t=1740415446"
+    ],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Mon, 04 Aug 2025 18:01:48 +0000 (UTC)"
+  },
+  {
+    "title": "Former UK Chancellor Warns Britain Falls Behind on Crypto Adoption",
+    "summary": "Former Chancellor George Osborne has warned that the UK is being 'completely left behind' in cryptocurrency development and adoption compared to other major economies. This represents a significant regulatory and competitive concern for the UK's financial sector positioning.",
+    "categories": [
+      "regulation",
+      "institutional"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/333390/former-chancellor-osborne-warns-uk-left-behind-crypto",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Mon, 04 Aug 2025 18:01:48 +0000 (UTC)"
+  },
+  {
+    "title": "Satoshi Nakamoto Statue Vandalized and Recovered in Switzerland",
+    "summary": "A statue commemorating Bitcoin creator Satoshi Nakamoto was stolen and vandalized from Lake Lugano, Switzerland, before being recovered. The incident sparked community response about protecting Bitcoin's symbolic representation and cultural heritage.",
+    "categories": [
+      "general"
+    ],
+    "importance": "low",
+    "primary_link": "https://decrypt.co/333368/bitcoin-creator-satoshi-nakamoto-statue-vandalized",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Mon, 04 Aug 2025 18:01:48 +0000 (UTC)"
+  },
+  {
+    "title": "AI Trading Bots Security and Trust Analysis",
+    "summary": "Investigation into the booming AI trading bot market examines whether users can safely trust these automated systems with their investment capital. The analysis covers security risks, performance claims, and regulatory considerations for AI-powered trading platforms.",
+    "categories": [
+      "security",
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/333303/ai-trading-bots-booming-can-you-trust-them-with-your-money",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Mon, 04 Aug 2025 18:01:48 +0000 (UTC)"
+  }
+]

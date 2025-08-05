@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Ethereum ETFs Dominate Bitcoin with $1.8B Weekly Inflows",
+    "summary": "For the first time, Ethereum ETFs massively outpaced Bitcoin funds with over $1.8 billion in weekly inflows versus only $70 million for Bitcoin ETFs. Analysts cite diversification beyond Bitcoin, ETH's price surge to seven-month highs, and GENIUS Act impact driving the unprecedented demand shift.",
+    "categories": [
+      "institutional",
+      "market"
+    ],
+    "importance": "high",
+    "primary_link": "https://decrypt.co/331906/ethereum-etfs-massively-outpace-bitcoin-funds",
+    "additional_links": [
+      "https://decrypt.co/331007/ethereum-stole-the-show-etf-inflows-record-high",
+      "https://decrypt.co/330836/trump-signs-genius-act-into-law-ushering-crypto-integration-us-economy"
+    ],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Sat, 26 Jul 2025 17:17:27 +0000 (UTC)"
+  },
+  {
+    "title": "Historic Bitcoin Whale Cashes Out $9 Billion Position",
+    "summary": "One of the biggest Bitcoin whales in history liquidated a massive $9 billion position, representing a significant market event. The large-scale sell-off by this major holder could impact Bitcoin's price dynamics and market sentiment as institutional and retail investors monitor whale movements.",
+    "categories": [
+      "market"
+    ],
+    "importance": "high",
+    "primary_link": "https://decrypt.co/331939/one-biggest-bitcoin-whales-history-cashed-out-9-billion",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Sat, 26 Jul 2025 17:17:27 +0000 (UTC)"
+  },
+  {
+    "title": "Wyoming Launches Yield-Bearing Stablecoin as CBDC Alternative",
+    "summary": "Wyoming introduced a new stablecoin designed as a yield-bearing alternative to central bank digital currency (CBDC) control. The state-level initiative represents pushback against federal CBDC development while offering citizens a decentralized alternative for digital payments and savings.",
+    "categories": [
+      "regulation",
+      "defi"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/331948/wyoming-stablecoin-billed-yield-bearing-alternative-cbdc-control",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Sat, 26 Jul 2025 17:17:27 +0000 (UTC)"
+  },
+  {
+    "title": "Tea App Security Breach Exposes 72,000 User IDs",
+    "summary": "Tea App, which marketed itself as protecting women's safety, suffered a major security failure exposing 72,000 user identification records. The breach highlights critical security vulnerabilities in apps handling sensitive personal data and raises questions about privacy protection claims.",
+    "categories": [
+      "security"
+    ],
+    "importance": "medium",
+    "primary_link": "https://decrypt.co/331961/tea-app-claimed-protect-women-exposes-72000-ids-epic-security-fail",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Sat, 26 Jul 2025 17:17:27 +0000 (UTC)"
+  }
+]

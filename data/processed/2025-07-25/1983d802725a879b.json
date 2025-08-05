@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Crypto Market Rally Stalls as Bitcoin Consolidates and Altcoins Retreat",
+    "summary": "The crypto rally took a breather with leading altcoins stalling amid Bitcoin's consolidation around current levels. Meme coins were particularly hit hard, dropping double-digits as the sector faced reduced volatility and institutional maturation of Bitcoin as an asset class.",
+    "categories": [
+      "market",
+      "meme"
+    ],
+    "importance": "low",
+    "primary_link": "https://decrypt.co/331531/crypto-rally-stalls-correction-ahead-macro-noise",
+    "additional_links": [
+      "https://decrypt.co/331559/bitcoin-steady-altcoins-solana-xrp-waver",
+      "https://decrypt.co/331536/doge-pepe-pump-bleed-as-pump-fun-confirms-no-airdrop-in-immediate-future",
+      "https://decrypt.co/331528/solana-pump-fun-amended-rico-suit-alleging-meme-coin-gambling"
+    ],
+    "images": [
+      "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3a7eaca9-4533-4930-8063-6c6d88709e41/Daily_dispatch.png?t=1740415446"
+    ],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Thu, 24 Jul 2025 17:34:24 +0000 (UTC)"
+  },
+  {
+    "title": "Pump.fun Faces $5.5B RICO Lawsuit Alleging Coordinated Gambling Scheme",
+    "summary": "An amended class action lawsuit alleges Pump.fun, Solana Foundation, and infrastructure partners operated a coordinated racketeering enterprise worth $5.5B. The RICO charges claim systematic misconduct in meme coin operations, while Pump.fun confirmed no immediate airdrop plans, further dampening meme coin sentiment.",
+    "categories": [
+      "security",
+      "regulation",
+      "meme"
+    ],
+    "importance": "high",
+    "primary_link": "https://decrypt.co/331528/solana-pump-fun-amended-rico-suit-alleging-meme-coin-gambling",
+    "additional_links": [],
+    "images": [],
+    "source": "Decrypt Media <hi@mail-daily.decrypt.co>",
+    "emailDate": "Thu, 24 Jul 2025 17:34:24 +0000 (UTC)"
+  }
+]
